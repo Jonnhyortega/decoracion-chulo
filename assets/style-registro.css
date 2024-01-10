@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300&family=IBM+Plex+Mono:ital,wght@1,500&family=Space+Mono:wght@700&display=swap");
+
+:root {
+  /* FONTS */
+  --texto-general: "Barlow Condensed", sans-serif;
+  --text-titulo: "IBM Plex Mono", monospace;
+  /* COLORS */
+  --main-color: hsl(20, 90%, 88%);
+  --secondary-color: hsl(29, 62%, 78%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(234, 217, 198, 1);
+  z-index: -1;
+}
+
+.container-principal {
+  /* margin: 50px; */
+  display: flex;
+  gap: 20px;
+  width: 80%;
+  height: 90%;
+  padding: 40px;
+  /* border: 1px solid black; */
+  border-radius: 20px;
+  /* margin-top: 120px; */
+  background: linear-gradient(to bottom, hsl(20, 50%, 70%), hsl(0, 73%, 90%));
+  box-shadow: 10px 10px 10px 0px;
+}
+
+.container-right {
+  background-color: var(--secondary-color);
+  border-radius: 20px;
+  width: 50%;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 20px;
+}
+
+.container-left {
+  width: 50%;
+  border-radius: 20px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.name-adress,
+.phone-lugar,
+.email-postal-code,
+.password {
+  display: flex;
+  gap: 10px;
+}
+
+#logo-chulo-form {
+  width: 30%;
+  height: 30%;
+  border-radius: 10px;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-family: var(--texto-general);
+  font-size: 20px;
+  font-weight: 700;
+}
+
+input,
+select {
+  border-radius: 0.2em;
+  padding: 10px;
+  width: 150px;
+  border: none;
+  height: 20px;
+  font: var(--text-titulo);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+  padding: 10px;
+  width: 100px;
+  height: 30px;
+
+  font-family: var(--texto-general);
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  bottom: 60px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  background-color: var(--secondary-color);
+  transition-duration: 0.6s;
+  position: absolute;
+  transition-duration: 0.5s;
+}
+
+form button:hover {
+  border: none;
+  box-shadow: 3px 3px 10px 0px;
+  background-color: var(--main-color);
+  width: 200px;
+}
+

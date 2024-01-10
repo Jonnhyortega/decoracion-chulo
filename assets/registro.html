@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/assets/styles.css" />
+    <link rel="stylesheet" href="/assets/querys.css" />
+    <link rel="stylesheet" href="/assets/style-registro.css" />
+    <link rel="stylesheet" href="/assets/style-login.css" />
+    <link rel="icon" href="" />
+    <title>Chulo terrazos</title>
+  </head>
+  <body>
+    <header>
+      <div class="container-img">
+        <a href="/index.html"
+          ><img src="/assets/imgs/logo-header.png" alt="Logo Chulos" />
+        </a>
+      </div>
+      <div class="input-container">
+        <input type="search" />
+        <button>Buscar</button>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="/index.html">Inicio</a></li>
+          <li><a href="">Productos</a></li>
+          <li><a href="">Contactanos</a></li>
+          <li><a href="/assets/registro.html">Registrarse</a></li>
+          <li>
+            <a href=""><span>Iniciar</span> <span>Sesión</span></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="hero">
+      <div class="container-principal">
+        <div class="container-left">
+          <img
+            id="logo-chulo-form"
+            src="/assets/imgs/logo-header.png"
+            alt=""
+          />
+        </div>
+        <div class="container-right">
+          <form id="registro" action="registro">
+            <div class="name-adress">
+              <label for="name"
+                >Nombre
+                <input type="text" id="name" required />
+              </label>
+  
+              <label for="adress">
+                Apellido
+                <input type="text" id="adress" required />
+              </label>
+            </div>
+            <div class="phone-lugar">
+              <label for="phone">
+                Teléfono
+                <input type="number" id="phone" required max="10" />
+              </label>
+  
+              <label for="lugar">
+                Lugar de residencia
+                <select name="lugar" id="lugar" required>
+                  <option disabled>Seleccione lugar de residencia</option>
+                  <option value="caba">Ciudad Autonoma de Buenos Aires</option>
+                  <option value="buenos-aires">Buenos Aires</option>
+                  <option value="catamarca">Catamarca</option>
+                  <option value="chaco">Chaco</option>
+                  <option value="chubut">Chubut</option>
+                  <option value="cordoba">Córdoba</option>
+                  <option value="corrientes">Corrientes</option>
+                  <option value="entre-rios">Entre Ríos</option>
+                  <option value="formosa">Formosa</option>
+                  <option value="jujuy">Jujuy</option>
+                  <option value="la-pampa">La Pampa</option>
+                  <option value="la-rioja">La Rioja</option>
+                  <option value="mendoza">Mendoza</option>
+                  <option value="misiones">Misiones</option>
+                  <option value="neuquen">Neuquén</option>
+                  <option value="rio-negro">Río Negro</option>
+                  <option value="salta">Salta</option>
+                  <option value="san-juan">San Juan</option>
+                  <option value="san-luis">San Luis</option>
+                  <option value="santa-cruz">Santa Cruz</option>
+                  <option value="santa-fe">Santa Fe</option>
+                  <option value="santiago-del-estero">Santiago del Estero</option>
+                  <option value="tierra-del-fuego">Tierra del Fuego</option>
+                  <option value="tucuman">Tucumán</option>
+                </select>
+              </label>
+            </div>
+  
+            <div class="email-postal-code">
+              <label for="email">
+                Email
+                <input type="email" id="email" required />
+              </label>
+              <label for="postal-code">
+                Codigo postal
+                <input type="number" id="postal-code" required />
+              </label>
+            </div>
+  
+            <div class="password">
+              <label for="password">
+                Contraseña
+                <input type="password" id="password" max="8" min="8" required />
+              </label>
+  
+              <label for="confirm-password">
+                Confirmar contraseña
+                <input type="password" id="confirm-password" required />
+              </label>
+            </div>
+  
+            <button>Registrarse</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    
+  </body>
+</html>
