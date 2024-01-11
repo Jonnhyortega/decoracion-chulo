@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300&family=IBM+Plex+Mono:ital,wght@1,500&family=Space+Mono:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap");
 :root {
   /* FONTS */
+  --texto-montserrat: "Montserrat", sans-serif;
   --texto-general: "Barlow Condensed", sans-serif;
   --text-titulo: "IBM Plex Mono", monospace;
   /* COLORS */
@@ -231,9 +233,9 @@ nav ul {
 }
 
 .box-hero-main span {
-  font-family: var(--text-titulo);
+  font-family: var(--texto-montserrat);
   font-size: 50px;
-  font-weight: 600;
+  font-weight: 700;
   background: repeating-linear-gradient(
     to right,
     #fffefe,
@@ -256,8 +258,8 @@ nav ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 180px;
-  height: 30px;
+  width: 220px;
+  height: 45px;
   border-radius: 5px;
   text-align: center;
   background-color: var(--secondary-color);
@@ -293,6 +295,9 @@ nav ul {
   box-shadow: 0 7px 50px 5px #00000077;
   /* transform: scale(1.015); */
   transition: 0.7s ease;
+  width: 220px;
+  height: 45px;
+  letter-spacing: 5px;
 }
 
 /* SECTION1: HERO */
@@ -353,8 +358,57 @@ footer {
   display: flex;
   gap: 20px;
 }
+
+.footer-info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer-info a {
+  text-decoration: none;
+  color: white;
+  font-family: var(--texto-general);
+}
+
+.footer-info a:hover {
+  color: gold;
+}
 /* FOOTER */
 
-/* PRODUCTS */
+/* PRODUCTOS */
+#productos {
+  padding: 50px 0px 50px 0px;
+  width: 100%;
+  background-color: var(--secondary-color);
+  overflow: scroll;
+  display: flex;
+  gap: 20px;
+}
 
-/* PRODUCTS */
+.card {
+  background: linear-gradient(to bottom, #1f1f1f, var(--secondary-color));
+  padding: 20px;
+  width: 400px;
+  border: 2px solid white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 10px;
+  gap: 20px;
+}
+
+#producto-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+}
+
+.card button {
+  background-color: gold;
+  cursor: pointer;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+}
+/* PRODUCTOS */
