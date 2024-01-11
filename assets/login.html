@@ -12,9 +12,9 @@
   </head>
   <body>
     <header>
- <div id="descuento-box" class="text-class-1">
-      <span>💸 15% OFF EFECTIVO </span><span>💰15% OFF TRANSFERENCIA</span>
-    </div>
+      <div id="descuento-box" class="text-class-1">
+        <span>💸 15% OFF EFECTIVO </span><span>💰15% OFF TRANSFERENCIA</span>
+      </div>
       <div class="input-container">
         <input type="search" />
         <button>Buscar</button>
@@ -33,7 +33,9 @@
             <a href="/assets/registro.html">Registrarse</a>
           </li>
           <li id="header-li">
-            <a href=""><span>Iniciar</span> <span>Sesión</span></a>
+            <a href="/assets/login.html"
+              ><span>Iniciar</span> <span>Sesión</span></a
+            >
           </li>
         </ul>
       </nav>
@@ -41,86 +43,20 @@
 
     <section id="hero">
       <div class="container-principal">
+        <span>Log in</span>
+        <form id="registro" action="log-in">
+          <label for="email">
+            Correo
+            <input type="email" id="email" />
+          </label>
 
-        <span>Registro</span>
-          <form id="registro" action="registro">
-           
-            <div class="name-adress">
-              <label for="name"
-                >Nombre
-                <input type="text" id="name" required />
-              </label>
-  
-              <label for="adress">
-                Apellido
-                <input type="text" id="adress" required />
-              </label>
-            </div>
-           
-            <div class="phone-lugar">
-              <label for="phone">
-                Teléfono
-                <input type="number" id="phone" required max="10" />
-              </label>
-  
-              <label for="lugar">
-                Lugar de residencia
-                <select name="lugar" id="lugar" required>
-                  <option disabled>Seleccione lugar de residencia</option>
-                  <option value="caba">Ciudad Autonoma de Buenos Aires</option>
-                  <option value="buenos-aires">Buenos Aires</option>
-                  <option value="catamarca">Catamarca</option>
-                  <option value="chaco">Chaco</option>
-                  <option value="chubut">Chubut</option>
-                  <option value="cordoba">Córdoba</option>
-                  <option value="corrientes">Corrientes</option>
-                  <option value="entre-rios">Entre Ríos</option>
-                  <option value="formosa">Formosa</option>
-                  <option value="jujuy">Jujuy</option>
-                  <option value="la-pampa">La Pampa</option>
-                  <option value="la-rioja">La Rioja</option>
-                  <option value="mendoza">Mendoza</option>
-                  <option value="misiones">Misiones</option>
-                  <option value="neuquen">Neuquén</option>
-                  <option value="rio-negro">Río Negro</option>
-                  <option value="salta">Salta</option>
-                  <option value="san-juan">San Juan</option>
-                  <option value="san-luis">San Luis</option>
-                  <option value="santa-cruz">Santa Cruz</option>
-                  <option value="santa-fe">Santa Fe</option>
-                  <option value="santiago-del-estero">Santiago del Estero</option>
-                  <option value="tierra-del-fuego">Tierra del Fuego</option>
-                  <option value="tucuman">Tucumán</option>
-                </select>
-              </label>
-            </div>
-  
-            <div class="email-postal-code">
-              <label for="email">
-                Email
-                <input type="email" id="email" required />
-              </label>
-              <label for="postal-code">
-                Codigo postal
-                <input type="number" id="postal-code" required />
-              </label>
-            </div>
-  
-            <div class="password">
-              <label for="password">
-                Contraseña
-                <input type="password" id="password" max="8" min="8" required />
-              </label>
-  
-              <label for="confirm-password">
-                Confirmar contraseña
-                <input type="password" id="confirm-password" required />
-              </label>
-              
-            </div>
-            <button>Registrarse</button>
-           
-          </form>
+          <label for="password">
+            Contraseña
+            <input type="password" id="password" max="8" min="8" required />
+          </label>
+
+          <button>Iniciar sesion</button>
+        </form>
       </div>
     </section>
 
