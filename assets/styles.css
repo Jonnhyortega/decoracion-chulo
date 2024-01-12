@@ -77,7 +77,6 @@ header {
   width: 100px;
   display: flex;
   background-color: #0808085e;
-  box-shadow: 1px 1px 3px 0px;
 }
 
 .input-container button {
@@ -85,7 +84,7 @@ header {
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  box-shadow: 1px 1px 3px 0px;
+  box-shadow: 1px 1px 20px 0px #030303ba;
   background-color: var(--main-color);
   transition: 0.3s ease;
   font-family: var(--texto-general);
@@ -95,7 +94,7 @@ header {
 
 .input-container button:hover {
   border: none;
-  box-shadow: 3px 3px 10px 0px;
+  box-shadow: 1px 1px 20px 0px #fbfbfba9;
   background-color: var(--main-color);
   background-color: white;
 }
@@ -110,11 +109,14 @@ header {
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  transition-duration: 0.7s;
+  transition-duration: 0.3s;
+  box-shadow: 5px 5px 20px 0px #030303ba;
+
 }
 
 .container-img:hover {
   transform: rotate(360deg);
+  box-shadow: 5px 5px 20px 0px #fffefe;
 }
 
 .container-img img {
@@ -149,6 +151,10 @@ nav ul {
   /* padding: 10px; */
 }
 
+#search-header{
+  height: 20px !important;
+}
+
 /* HEADER */
 
 /* SECTION 1: HERO */
@@ -162,7 +168,7 @@ nav ul {
   padding: 20px;
   margin-top: 75px;
   width: 100%;
-  height: calc(100vh - 15vh);
+  height: 80vh;
   border: 1px solid black;
   background-image: url(/assets/imgs/pexels-valeria-boltneva-1129413.jpg);
   /* background-repeat: none; */
@@ -273,9 +279,10 @@ nav ul {
   font-size: 20px;
   letter-spacing: 2px;
   font-weight: 600;
-  box-shadow: 10px 0px 10px 0px;
   font-family: var(--texto-general);
   transition: 1s ease;
+  box-shadow: 5px 5px 20px 0px #030303ba;
+
 }
 
 #ver-productos::before {
@@ -297,8 +304,8 @@ nav ul {
 
 #ver-productos:hover {
   background-color: white;
-  box-shadow: 0 7px 50px 5px #00000077;
-  /* transform: scale(1.015); */
+  box-shadow: 5px 5px 20px 0px #fefefef1;
+  transform: scale(1.015);
   transition: 0.7s ease;
   width: 220px;
   height: 45px;
@@ -322,6 +329,10 @@ nav ul {
   flex-direction: column;
   align-items: center;
   gap: 20px;
+
+  background: url(/assets/imgs/fondo-registroNew.jpg);
+  background-size: cover;
+  background-position: center;
 }
 
 .first-line, 
@@ -334,7 +345,7 @@ nav ul {
 
 
 .card {
-  background: linear-gradient(to bottom, #1f1f1f, var(--secondary-color));
+  background: linear-gradient(to bottom, #1f1f1f0d, var(--secondary-color));
   padding: 20px;
   width: 320px;
   border: 2px solid white;
@@ -344,12 +355,14 @@ nav ul {
   align-items: center;
   border-radius: 10px;
   gap: 20px;
-  transition: 0.6s ease;
+  transition: .5s ease;
   box-shadow: 1px 1px 13px 0px;
 }
 
 .card:hover {
   width: 330px;
+  background: linear-gradient(to bottom, #1f1f1ffe, var(--secondary-color));
+
 }
 
 #producto-img {
@@ -357,6 +370,7 @@ nav ul {
   height: 250px;
   border-radius: 10px;
 }
+
 
 .box-card {
   display: flex;
@@ -366,6 +380,7 @@ nav ul {
 }
 
 .card button {
+  margin-top: 20px;
   background-color: #1f1f1f6f;
   cursor: pointer;
   color: white;
@@ -385,13 +400,24 @@ nav ul {
 .card span {
   color: #fffefe;
   font-family: var(--texto-general);
-  font-weight: 600;
+  font-weight: 800;
+  font-size: 25px;
   letter-spacing: 1px;
 }
 
+#medios-pago{
+  font-size: 15px;
+  width: 100%;
+  text-align: right;
+  cursor: pointer;
+}
+
+#medios-pago:hover{
+  color: #1f1f1f;
+}
 #price {
   border-radius: 2px;
-  width: 70px;
+  width: 100px;
   padding: 10px 10px 10px 10px;
   background-color: rgba(8, 8, 8, 0.467);
 }
