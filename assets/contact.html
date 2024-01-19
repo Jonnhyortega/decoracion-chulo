@@ -1,144 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="/assets/styles.css" />
-        <link rel="stylesheet" href="/assets/querys.css" />
-        <link rel="stylesheet" href="/assets/style-registro.css" />
-        <!-- <link rel="stylesheet" href="/assets/style-login.css" /> -->
-        <link rel="icon" href="/assets/imgs/logo-header.png" />
-        <title>Chulo terrazos</title>
-      </head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/assets/styles.css" />
+    <link rel="stylesheet" href="/assets/querys.css" />
+    <link rel="stylesheet" href="/assets/style-registro.css" />
+    <!-- <link rel="stylesheet" href="/assets/style-login.css" /> -->
+    <link rel="icon" href="/assets/imgs/logo-header.png" />
+    <title>Chulo terrazos</title>
+  </head>
+  <body>
     <header>
-        <div id="descuento-box" class="text-class-1">
-          <span>💸 15% OFF EFECTIVO </span><span>💰15% OFF TRANSFERENCIA</span>
-        </div>
-        <div class="input-container">
-          <input id="search-header" type="search" />
-          <button>Buscar</button>
-        </div>
-  
-        <nav>
-          <ul>
-            <div class="container-img">
-              <a href="/index.html"
-                ><img src="/assets/imgs/logo-header.png" alt="Logo Chulos" />
-              </a>
-            </div>
-            <li id="header-li"><a href="/index.html">Productos</a></li>
-            <li id="header-li"><a href="/assets/contact.html">Contactanos</a></li>
-            <li id="header-li"><a href="/index.html">¿Porque elegirnos?</a></li>
-            <li id="header-li">
-              <a href="/assets/registroNew.html">Registrarse</a>
-            </li>
-            <li id="header-li">
-              <a href="/assets/login.html"
-                ><span>Iniciar</span> <span>Sesión</span></a
-              >
-            </li>
-          </ul>
-        </nav>
-      </header>
-      <section id="background-registroNew">
-     
-     
-        <form id="registro" action="registro">
-          <div class="name-adress">
-            <label for="name"
-              >Nombre
-              <input type="text" id="name" required />
-            </label>
-          </div>
-  
-          <div class="email-postal-code">
-            <label for="email">
-              Email
-              <input type="email" id="email" required />
-            </label>
-          </div>
-  
-          <div class="password">
-            <label for="password">
-              Mensaje          
-              <textarea name="password" cols="25" rows="10"></textarea> 
-             </label>
-  
-          </div>
-          <button>Enviar</button>
-        </form>
-  
-        
-      </section>
-      
-    <footer>
-        <nav id="footer-nav">
-          <ul id="footer-nav-ul">
-            <a href="/index.html"
-              ><img
-                class="container-img"
-                src="/assets/imgs/logo-header.png"
-                alt="Logo Chulos"
-              />
-            </a>
-            <!-- <li><a href="/index.html">Inicio</a></li> -->
-            <li><a href="">Productos</a></li>
-            <li><a href="">Contactanos</a></li>
-            <li><a href="/assets/registro.html">Registrarse</a></li>
-            <li>
-              <a href=""><span>Iniciar</span> <span>Sesión</span></a>
-            </li>
-          </ul>
-        </nav>
-  
-        <div class="maps">
-          <span>📍 Villa Lugano</span>
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3280.645664338518!2d-58.472813825207744!3d-34.68889136199974!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcceaeeacb5437%3A0x799c6c237dd412a1!2sCorrales%20%26%20Ca%C3%B1ada%20de%20G%C3%B3mez%2C%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1704921353732!5m2!1ses-419!2sar"
-            style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          >
-          </iframe>
-        </div>
-  
-        <div class="redes-container">
-          <span>Seguinos en nuestras redes:</span>
-          <div class="redes-footer">
-            <a
-              target="_blank"
-              href="https://www.facebook.com/search/top?q=chulos%20terrazzo"
-              ><img
-                class="container-img"
-                src="/assets/imgs/facebook.png"
-                alt="Logo Facebook"
-              />
-            </a>
-            <a target="_blank" href="https://www.twitter.com">
-              <img class="container-img" src="/assets/imgs/x.png" alt="Logo X" />
-            </a>
-            <a
-              target="_blank"
-              href="https://www.youtube.com/watch?v=R4id1K3P8mI&ab_channel=elnegroquetose"
+      <div id="descuento-box" class="text-class-1">
+        <span>💸 15% OFF EFECTIVO </span><span>💰15% OFF TRANSFERENCIA</span>
+      </div>
+
+      <div class="input-container">
+        <input id="search-header" type="search" />
+        <button>Buscar</button>
+      </div>
+
+      <div class="container-img">
+        <a href="/index.html"
+          ><img src="/assets/imgs/logo-header.png" alt="Logo Chulos" />
+        </a>
+      </div>
+
+      <nav id="header-nav">
+        <label for="toggle-menu"
+          ><i class="fa-sharp fa-solid fa-bars"></i
+        ></label>
+        <input type="checkbox" id="toggle-menu" />
+
+        <ul>
+          <li id="header-li"><a href="/index.html">Productos</a></li>
+          <li id="header-li"><a href="/assets/contact.html">Contactanos</a></li>
+          <!-- <li id="header-li"><a href="#section-two">¿Porque elegirnos?</a></li> -->
+          <li id="header-li">
+            <a href="/assets/registroNew.html">Registrarse</a>
+          </li>
+          <li id="header-li">
+            <a href="/assets/login.html"
+              ><span>Iniciar</span> <span>Sesión</span></a
             >
-              <img
-                class="container-img"
-                src="/assets/imgs/youtube.png"
-                alt="Negro que toce"
-              />
-            </a>
-          </div>
-          <span> 📞 +54 011 2265 4367</span>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section id="background-registroNew">
+      <form id="registro" action="registro">
+        <div class="name-adress">
+          <label for="name"
+            >Nombre
+            <input type="text" id="name" required />
+          </label>
         </div>
-  
-        <div class="footer-info">
-          <a href="">Cómo comprar</a>
-          <a href="">Formas de entrega</a>
-          <a href="">Horarios de atencion</a>
-          <a href="">Posventa</a>
+
+        <div class="email-postal-code">
+          <label for="email">
+            Email
+            <input type="email" id="email" required />
+          </label>
         </div>
-      </footer>
-</body>
+
+        <div class="password">
+          <label for="password">
+            Mensaje
+            <textarea name="password" cols="25" rows="10"></textarea>
+          </label>
+        </div>
+        <button>Enviar</button>
+      </form>
+    </section>
+
+    <footer>
+      <nav id="footer-nav">
+        <ul id="footer-nav-ul">
+          <a href="/index.html"
+            ><img
+              class="container-img"
+              src="/assets/imgs/logo-header.png"
+              alt="Logo Chulos"
+            />
+          </a>
+          <!-- <li><a href="/index.html">Inicio</a></li> -->
+          <li><a href="/index.html">Productos</a></li>
+          <li><a href="/assets/contact.html">Contactanos</a></li>
+          <li><a href="/assets/registroNew.html">Registrarse</a></li>
+          <li>
+            <a href="/assets/login.html"
+              ><span>Iniciar</span> <span>Sesión</span></a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <div class="maps">
+        <span>Villa Lugano</span>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3280.645664338518!2d-58.472813825207744!3d-34.68889136199974!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcceaeeacb5437%3A0x799c6c237dd412a1!2sCorrales%20%26%20Ca%C3%B1ada%20de%20G%C3%B3mez%2C%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1704921353732!5m2!1ses-419!2sar"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        >
+        </iframe>
+      </div>
+
+      <div class="redes-container">
+        <span>Seguinos en nuestras redes:</span>
+        <div class="redes-footer">
+          <a
+            target="_blank"
+            href="https://www.facebook.com/search/top?q=chulos%20terrazzo"
+            ><img
+              class="container-img"
+              src="/assets/imgs/facebook.png"
+              alt="Logo Facebook"
+            />
+          </a>
+          <a target="_blank" href="https://www.twitter.com">
+            <img class="container-img" src="/assets/imgs/x.png" alt="Logo X" />
+          </a>
+          <a
+            target="_blank"
+            href="https://www.youtube.com/watch?v=R4id1K3P8mI&ab_channel=elnegroquetose"
+          >
+            <img
+              class="container-img"
+              src=" /assets/imgs/youtube.png"
+              alt="Señor que toce"
+            />
+          </a>
+        </div>
+        <a id="whatsapp" target="_blank" href="/https://web.whatsapp.com/"
+          ><span> 📞 +54 011 2265 4367</span></a
+        >
+      </div>
+
+      <div class="footer-info">
+        <a href="">Cómo comprar</a>
+        <a href="">Formas de entrega</a>
+        <a href="">Horarios de atencion</a>
+        <a href="">Posventa</a>
+      </div>
+    </footer>
+  </body>
 </html>

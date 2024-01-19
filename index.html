@@ -7,16 +7,27 @@
     <link rel="stylesheet" href="/assets/querys.css" />
     <link rel="stylesheet" href="/assets/style-registro.css" />
     <link rel="stylesheet" href="/assets/style-login.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
     <link rel="icon" href="/assets/imgs/logo-header.png" />
     <title>Chulo terrazos</title>
   </head>
   <body>
+    <!--
+   COSAS PARA ARREGLAR
+        1 CAMBIAR UN POCO EL NAV. {CENTRAR MAS EL LOGO, CENTRAR Y PONER BORDER BOTTOM 
+          CON HOVER, }
+        2 LA CARD DE PRODUCTOS EN RESOLUCIONES PEQUEÑAS DEBERIA OCUPAR TODO EL VH.
+        3 CREAR PAGINA "TU BUSQUEDA NO ARROJO RESULTADOS" PARA LINKEAR CON SEARCH DEL NAV.
+        4 CENTRAR BOTON DEL HERO.
+        5 NO SE VEN LAS OPCIONES EN EL SELECT DEL FORMULARIO DE REGISTRO
+-->
     <header>
       <div id="descuento-box" class="text-class-1">
         <span>💸 15% OFF EFECTIVO </span><span>💰15% OFF TRANSFERENCIA</span>
       </div>
-
 
       <div class="input-container">
         <input id="search-header" type="search" />
@@ -29,34 +40,32 @@
         </a>
       </div>
 
-      <label class="toggle-menu" for="toggle-menu">
-         <i class="fa-sharp fa-solid fa-bars"></i>
-      </label>
-      <input type="checkbox" class="toggle-menu">
-     
       <nav id="header-nav">
-
+        <label for="toggle-menu"
+          ><i class="fa-sharp fa-solid fa-bars"></i
+        ></label>
+        <input type="checkbox" id="toggle-menu" />
 
         <ul>
           <li id="header-li"><a href="#productos">Productos</a></li>
           <li id="header-li"><a href="/assets/contact.html">Contactanos</a></li>
-          <li id="header-li"><a href="#section-two">¿Porque elegirnos?</a></li>
+          <li id="header-li"><a href="#section-two">Nosotros</a></li>
           <li id="header-li">
             <a href="/assets/registroNew.html">Registrarse</a>
           </li>
           <li id="header-li">
-            <a href="/assets/login.html"
-              ><span>Iniciar</span> <span>Sesión</span></a
-            >
+            <a href="/assets/login.html">Acceder</a>
           </li>
         </ul>
-     </nav> 
+      </nav>
     </header>
 
     <section id="hero">
       <div class="box-hero-main">
         <div class="box-hero-left">
-          <span>Decoración de interiores</span>
+          <div id="box-span">
+              <span>Decoración de interiores</span>
+          </div>
           <a id="ver-productos" href="#productos">Ver productos</a>
         </div>
 
@@ -69,11 +78,11 @@
     <section id="section-two">
       <div id="first-sub-section">
         <span>
-          Nuestra garantía es la base de tu confianza. Respaldamos cada
-          producto con buena calidad y precios accesibles. En cada compra,
-          te ofrecemos no solo un producto, sino también la tranquilidad de
-          saber que estás invirtiendo en lo mejor. Creemos en construir
-          relaciones duraderas basadas en confianza y satisfacción.
+          Nuestra garantía es la base de tu confianza. Respaldamos cada producto
+          con buena calidad y precios accesibles. En cada compra, te ofrecemos
+          no solo un producto, sino también la tranquilidad de saber que estás
+          invirtiendo en lo mejor. Creemos en construir relaciones duraderas
+          basadas en confianza y satisfacción.
         </span>
       </div>
       <div id="line-divisory"></div>
@@ -109,8 +118,8 @@
           />
 
           <div class="box-card">
-            <span id="price">$25.000</span>
             <span id="description">Botiquin.</span>
+            <span id="price">$25.000</span>
             <button>Agregar</button>
             <span id="medios-pago">Ver medios de pago 💸</span>
           </div>
@@ -123,8 +132,8 @@
             alt="Botiquin blanco"
           />
           <div class="box-card">
-            <span id="price">$125.000</span>
             <span id="description">Bajo mesada.</span>
+            <span id="price">$125.000</span>
             <button>Agregar</button>
             <span id="medios-pago">Ver medios de pago 💸</span>
           </div>
@@ -137,8 +146,8 @@
             alt="Botiquin blanco"
           />
           <div class="box-card">
-            <span id="price">$25.000</span>
             <span id="description">Botiquin marron.</span>
+            <span id="price">$25.000</span>
             <button>Agregar</button>
             <span id="medios-pago">Ver medios de pago 💸</span>
           </div>
@@ -153,8 +162,8 @@
             alt="Respaldo de cama"
           />
           <div class="box-card">
-            <span id="price">$155.000</span>
             <span id="description">Set de jardin.</span>
+            <span id="price">$155.000</span>
             <button>Agregar</button>
             <span id="medios-pago">Ver medios de pago 💸</span>
           </div>
@@ -167,8 +176,8 @@
             alt="Respaldo de cama"
           />
           <div class="box-card">
-            <span id="price">$265.000</span>
             <span id="description">Juego de mesa y sillas.</span>
+            <span id="price">$265.000</span>
             <button>Agregar</button>
             <span id="medios-pago">Ver medios de pago 💸</span>
           </div>
@@ -181,8 +190,8 @@
             alt="Respaldo de cama"
           />
           <div class="box-card">
-            <span id="price">$165.000</span>
             <span id="description">Mesa de vidrio.</span>
+            <span id="price">$165.000</span>
             <button>Agregar</button>
             <span id="medios-pago">Ver medios de pago 💸</span>
           </div>
@@ -197,8 +206,8 @@
             alt="Mesa recibidora"
           />
           <div class="box-card">
-            <span id="price">$72.000</span>
             <span id="description">Mesa recibidora.</span>
+            <span id="price">$72.000</span>
             <button>Agregar</button>
             <span id="medios-pago">Ver medios de pago 💸</span>
           </div>
@@ -211,8 +220,8 @@
             alt="Mesita de luz"
           />
           <div class="box-card">
-            <span id="price">$15.000</span>
             <span id="description">Mesa de luz.</span>
+            <span id="price">$15.000</span>
             <button>Agregar</button>
             <span id="medios-pago">Ver medios de pago 💸</span>
           </div>
@@ -225,8 +234,8 @@
             alt="Escritorio"
           />
           <div class="box-card">
-            <span id="price">$55.000</span>
             <span id="description">Escritorio para pc.</span>
+            <span id="price">$55.000</span>
             <button>Agregar</button>
             <span id="medios-pago">Ver medios de pago 💸</span>
           </div>
@@ -236,7 +245,7 @@
       <button>Ver más</button>
     </section>
 
-    <footer>
+    <footer class="flex-column-for-querys">
       <nav id="footer-nav">
         <ul id="footer-nav-ul">
           <a href="/index.html"
@@ -247,11 +256,13 @@
             />
           </a>
           <!-- <li><a href="/index.html">Inicio</a></li> -->
-          <li><a href="">Productos</a></li>
-          <li><a href="">Contactanos</a></li>
-          <li><a href="/assets/registro.html">Registrarse</a></li>
+          <li><a href="#productos">Productos</a></li>
+          <li><a href="/assets/contact.html">Contactanos</a></li>
+          <li><a href="/assets/registroNew.html">Registrarse</a></li>
           <li>
-            <a href=""><span>Iniciar</span> <span>Sesión</span></a>
+            <a href="/assets/login.html"
+              ><span>Iniciar</span> <span>Sesión</span></a
+            >
           </li>
         </ul>
       </nav>
@@ -290,11 +301,13 @@
             <img
               class="container-img"
               src="./assets/imgs/youtube.png"
-              alt="Negro que toce"
+              alt="Señor que toce"
             />
           </a>
         </div>
-        <span> 📞 +54 011 2265 4367</span>
+        <a id="whatsapp" target="_blank" href="/https://web.whatsapp.com/">
+          📞 +54 011 2265 4367</a
+        >
       </div>
 
       <div class="footer-info">

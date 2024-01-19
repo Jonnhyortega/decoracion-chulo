@@ -15,31 +15,32 @@
       <div id="descuento-box" class="text-class-1">
         <span>💸 15% OFF EFECTIVO </span><span>💰15% OFF TRANSFERENCIA</span>
       </div>
+
       <div class="input-container">
         <input id="search-header" type="search" />
         <button>Buscar</button>
       </div>
 
-      <nav>
-        <ul>
-          <div class="container-img">
-            <a href="/index.html"
-              ><img src="/assets/imgs/logo-header.png" alt="Logo Chulos" />
-            </a>
-          </div>
-          <li id="header-li"><a href="/index.html">Productos</a></li>
-          <li id="header-li"><a href="/assets/contact.html">Contactanos</a></li>
-          <li id="header-li"><a href="/index.html">¿Porque elegirnos?</a></li>
-          <li id="header-li">
-            <a href="/assets/registroNew.html">Registrarse</a>
-          </li>
-          <li id="header-li">
-            <a href="/assets/login.html"
-              ><span>Iniciar</span> <span>Sesión</span></a
-            >
-          </li>
-        </ul>
-      </nav>
+      <div class="container-img">
+        <a href="/index.html"
+          ><img src="/assets/imgs/logo-header.png" alt="Logo Chulos" />
+        </a>
+      </div>
+
+<nav id="header-nav">
+  <label for="toggle-menu"><i class="fa-sharp fa-solid fa-bars"></i></label>
+  <input type="checkbox" id="toggle-menu" />
+
+   <ul>
+        <li id="header-li"><a href="#productos">Productos</a></li>
+        <li id="header-li"><a href="/assets/contact.html">Contactanos</a></li>
+        <li id="header-li">
+          <a href="/assets/registroNew.html">Registrarse</a>
+        </li>
+        <li id="header-li"><a href="/assets/login.html">Acceder</a></li>
+      </ul>
+</nav>
+     
     </header>
     <section id="background-registroNew">
      
@@ -134,17 +135,17 @@
             />
           </a>
           <!-- <li><a href="/index.html">Inicio</a></li> -->
-          <li><a href="">Productos</a></li>
-          <li><a href="">Contactanos</a></li>
-          <li><a href="/assets/registro.html">Registrarse</a></li>
+          <li><a href="#productos">Productos</a></li>
+          <li><a href="/assets/contact.html">Contactanos</a></li>
+          <li><a href="/assets/registroNew.html">Registrarse</a></li>
           <li>
-            <a href=""><span>Iniciar</span> <span>Sesión</span></a>
+            <a href="/assets/login.html"><span>Iniciar</span> <span>Sesión</span></a>
           </li>
         </ul>
       </nav>
 
       <div class="maps">
-        <span>📍 Villa Lugano</span>
+        <span>Villa Lugano</span>
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3280.645664338518!2d-58.472813825207744!3d-34.68889136199974!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcceaeeacb5437%3A0x799c6c237dd412a1!2sCorrales%20%26%20Ca%C3%B1ada%20de%20G%C3%B3mez%2C%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1704921353732!5m2!1ses-419!2sar"
           style="border: 0"
@@ -163,12 +164,12 @@
             href="https://www.facebook.com/search/top?q=chulos%20terrazzo"
             ><img
               class="container-img"
-              src="/assets/imgs/facebook.png"
+              src="./assets/imgs/facebook.png"
               alt="Logo Facebook"
             />
           </a>
           <a target="_blank" href="https://www.twitter.com">
-            <img class="container-img" src="/assets/imgs/x.png" alt="Logo X" />
+            <img class="container-img" src="./assets/imgs/x.png" alt="Logo X" />
           </a>
           <a
             target="_blank"
@@ -176,12 +177,12 @@
           >
             <img
               class="container-img"
-              src="/assets/imgs/youtube.png"
-              alt="Negro que toce"
+              src="./assets/imgs/youtube.png"
+              alt="Señor que toce"
             />
           </a>
         </div>
-        <span> 📞 +54 011 2265 4367</span>
+        <a id="whatsapp" target="_blank" href="/https://web.whatsapp.com/"><span> 📞 +54 011 2265 4367</span></a>
       </div>
 
       <div class="footer-info">
