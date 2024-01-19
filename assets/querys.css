@@ -212,6 +212,7 @@
 
   #hero {
     padding: 0;
+    width: auto;
   }
 
   .box-hero-main {
@@ -243,7 +244,7 @@ text-align: center;  }
 
   #first-sub-section span{
     font-size: 30px;
-    text-align: center;
+    text-align: left;
   }
 
   #second-sub-section {
