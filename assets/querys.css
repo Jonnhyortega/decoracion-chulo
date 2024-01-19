@@ -211,7 +211,6 @@
 
 
   #hero {
-    width: auto;
     padding: 0;
   }
 
@@ -229,7 +228,8 @@
 
   #box-span {
     width: auto;
-  }
+    font-size: 30px;
+text-align: center;  }
 
   .box-hero-right {
     display: none;
@@ -251,7 +251,7 @@
   }
 
   .card {
-    width: 300px;
+    width: 100%;
   }
 .box-card{
   align-items: center;
@@ -264,9 +264,7 @@
     flex-direction: column;
   }
 
-  #footer-nav-ul {
-    /* display: none; */
-  }
+  
 
   footer {
     gap: 20px;
