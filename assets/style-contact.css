@@ -1,0 +1,10 @@
+textarea {
+    font-size: 25px;
+    font-weight: 900;
+    font-family: var(--texto-general);
+width: 200px;
+height: 200px;
+border-radius: 5px;
+padding: 10px;
+text-align: right;
+} 
