@@ -1,11 +1,13 @@
-@media only screen and (min-width: 1441px) {
-  /* Estilos para escritorios más grandes */
+@media only screen and (max-width: 1300px) {
 }
 @media only screen and (min-width: 1025px) and (max-width: 1440px) {
   /* Estilos para portátiles y escritorios estándar */
   .box-hero-main {
     width: 100%;
-    
+  }
+
+  .box-hero-right {
+    display: none;
   }
 
   #section-two {
@@ -14,16 +16,33 @@
     width: 95%;
   }
 
+  #productos {
+    background-size: contain;
+    background-position: center;
+  }
+
   .card {
     width: 300px;
   }
 }
+
 @media only screen and (min-width: 601px) and (max-width: 1024px) {
-  /* Estilos para tabletas */
   header {
     width: 100%;
-   align-items: center;
+    align-items: center;
     gap: 10px;
+  }
+
+  #hero {
+    display: none;
+  }
+
+  .box-hero-main {
+    width: 100vh;
+  }
+
+  .box-hero-right {
+    display: none;
   }
 
   .descuento-box {
@@ -34,17 +53,12 @@
     display: none;
   }
 
-  
-
   #header-nav ul {
-  padding: 15px 0px 0px 40px;
-   flex-direction: column;
+    padding: 15px 0px 0px 40px;
+    flex-direction: column;
     align-items: left;
     border: 10px solid var(--main-color);
-    background: linear-gradient(
-      to bottom, 
-      #1f1f1f, 
-      #fb8a8a);
+    background: linear-gradient(to bottom, #1f1f1f, #fb8a8a);
     width: 100%;
     top: 70px;
     left: 0;
@@ -53,7 +67,7 @@
     display: none;
   }
 
-  #header-li a{
+  #header-li a {
     font-size: 40px;
     font-weight: 600;
     color: white;
@@ -64,49 +78,39 @@
 
   #header-nav i {
     display: block;
-
   }
 
-#toggle-menu {
-  display: block;
-  
-}
+  #toggle-menu {
+    display: block;
+  }
 
   #toggle-menu:checked ~ ul {
     display: flex;
   }
 
+  /* HEADER */
 
-/* HEADER */
+  /* HERO-QUERYS */
 
-
-
-/* HERO */
-  #hero {
-    padding: 0;
-  }
-
-  .box-hero-main {
-    width: 80%;
-    height: auto;
+  #hero-querys {
+    display: flex;
     flex-direction: column;
-  }
-
-  .box-hero-left {
-    width: 100%;
     justify-content: center;
+    gap: 20px;
     align-items: center;
+    margin-top: 17%;
+    width: 100%;
+    height: 300px;
+    background: linear-gradient(to bottom, var(--main-color), #f7626282);
   }
 
-  #box-span {
-    width: auto;
+  #ver-productos {
+    width: 50%;
   }
 
-  .box-hero-right {
-    display: none;
-  }
+  /* HERO-QUERYS */
 
-  #first-sub-section span{
+  #first-sub-section span {
     font-size: 30px;
     text-align: center;
   }
@@ -121,36 +125,46 @@
     flex-direction: column;
   }
 
-  .card {
-    width: 350px;
+  .first-line,
+  .second-line,
+  .third-line {
+    flex-direction: column;
   }
+
 
   #productos {
     flex-direction: column;
   }
-
-  .flex-column-for-querys {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
+  
+  
 
   footer {
     gap: 20px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 60px;
   }
 }
 
-@media only screen and (max-width: 600px) {
-  /* Estilos para tabletas */
+@media only screen and (max-width: 601px) {
   header {
-    position: relative;
     width: 100%;
-   align-items: center;
+    align-items: center;
     gap: 10px;
+  }
+
+  #hero {
+    display: none;
+  }
+
+  .box-hero-main {
+    width: 100vh;
+  }
+
+  .box-hero-right {
+    display: none;
   }
 
   .descuento-box {
@@ -161,27 +175,21 @@
     display: none;
   }
 
-  
-
   #header-nav ul {
-  padding: 15px 0px 0px 40px;
-   flex-direction: column;
+    padding: 15px 0px 0px 40px;
+    flex-direction: column;
     align-items: left;
-    border: 3px solid var(--main-color);
-    border-radius: 5px;
-    background: linear-gradient(
-      to bottom, 
-      #1f1f1f, 
-      #fb8a8a);
+    border: 10px solid var(--main-color);
+    background: linear-gradient(to bottom, #1f1f1f, #fb8a8a);
     width: 100%;
-    top: 75px;
+    top: 70px;
     left: 0;
     height: calc(100vh - 10px);
     position: absolute;
     display: none;
   }
 
-  #header-li a{
+  #header-li a {
     font-size: 40px;
     font-weight: 600;
     color: white;
@@ -192,86 +200,77 @@
 
   #header-nav i {
     display: block;
-
   }
 
-#toggle-menu {
-  display: block;
-  
-}
+  #toggle-menu {
+    display: block;
+  }
 
   #toggle-menu:checked ~ ul {
     display: flex;
   }
 
+  /* HEADER */
 
+  /* HERO-QUERYS */
 
-
-
-
-
-  #hero {
-    padding: 0;
-    width: auto;
-  }
-
-  .box-hero-main {
-    width: 80%;
-    height: auto;
+  #hero-querys {
+    display: flex;
     flex-direction: column;
-  }
-
-  .box-hero-left {
-    width: 100%;
     justify-content: center;
+    gap: 20px;
     align-items: center;
+    margin-top: 17%;
+    width: 100%;
+    height: 300px;
+    background: linear-gradient(to bottom, var(--main-color), #f7626282);
   }
 
-  #box-span {
-    width: auto;
-    font-size: 30px;
-text-align: center;  }
+  #ver-productos {
+    width: 50%;
+  }
 
-  .box-hero-right {
-    display: none;
+  /* HERO-QUERYS */
+
+  #first-sub-section span {
+    font-size: 30px;
+    text-align: center;
   }
 
   #section-two {
     margin-left: 40px;
     margin-right: 40px;
-    width: 95%;
-  }
-
-  #first-sub-section span{
-    font-size: 30px;
-    text-align: left;
+    width: 85%;
   }
 
   #second-sub-section {
     flex-direction: column;
   }
 
-  .card {
-    width: 100%;
+  .first-line,
+  .second-line,
+  .third-line {
+    flex-direction: column;
   }
-.box-card{
-  align-items: center;
-}
+
+
   #productos {
     flex-direction: column;
   }
-
-  .flex-column-for-querys {
-    flex-direction: column;
-  }
-
+  
   
 
   footer {
     gap: 20px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 60px;
   }
+}
+
+
+
+@media only screen and (min-width: 400px) {
 }

@@ -3,9 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/assets/styles.css"/>
     <link rel="stylesheet" href="/assets/styles.css" />
     <link rel="stylesheet" href="/assets/querys.css" />
-    <link rel="stylesheet" href="/assets/style-registro.css" />
     <link rel="stylesheet" href="/assets/style-login.css" />
     <link
       rel="stylesheet"
@@ -17,13 +17,10 @@
   <body>
     <!--
    COSAS PARA ARREGLAR
-        1 CAMBIAR UN POCO EL NAV. {CENTRAR MAS EL LOGO, CENTRAR Y PONER BORDER BOTTOM 
-          CON HOVER,
-        2 LA CARD DE PRODUCTOS EN RESOLUCIONES PEQUEÑAS DEBERIA OCUPAR TODO EL VH.
-        3 CREAR PAGINA "TU BUSQUEDA NO ARROJO RESULTADOS" PARA LINKEAR CON SEARCH DEL NAV.
-        4 CENTRAR BOTON DEL HERO.
+      
         5 NO SE VEN LAS OPCIONES EN EL SELECT DEL FORMULARIO DE REGISTRO.
         6 NO SE VE EL MENU-TOGGLE EN REGISTRO, ACCEDER Y CONTACTO.
+        7 LA PAGINA DE CONTACTO HAY QUE PONERLE EN EL INDEX COMO SECTION.
 -->
     <header>
       <div id="descuento-box" class="text-class-1">
@@ -76,6 +73,14 @@
       </div>
     </section>
 
+    <section id="hero-querys">
+
+          <img src="/assets/imgs/logo-header.png" alt="Logo-hero" />
+
+        <a id="ver-productos" href="#productos"> Ver productos</a>
+
+    </section>
+
     <section id="section-two">
       <div id="first-sub-section">
         <span>
@@ -110,7 +115,7 @@
     </section>
 
     <section id="productos">
-      <div class="first-line flex-column-for-querys">
+      <div class="first-line">
         <div class="card">
           <img
             id="producto-img"
@@ -155,7 +160,7 @@
         </div>
       </div>
 
-      <div class="second-line flex-column-for-querys">
+      <div class="second-line">
         <div class="card">
           <img
             id="producto-img"
@@ -199,7 +204,7 @@
         </div>
       </div>
 
-      <div class="third-line flex-column-for-querys">
+      <div class="third-line">
         <div class="card">
           <img
             id="producto-img"

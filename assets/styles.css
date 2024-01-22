@@ -199,8 +199,8 @@ header {
   gap: 10px;
   background-color: var(--main-color);
   margin: 100px;
-width: 100%;
-max-width: 1300px;
+  width: 100%;
+  max-width: 1300px;
   height: 100%;
   border: 5px solid black;
   border-radius: 20px;
@@ -341,6 +341,19 @@ max-width: 1300px;
 
 /* SECTION1: HERO */
 
+/*HERO-QUERYS*/
+#hero-querys {
+  display: none;
+  margin-top: 10%;
+  width: 100%;
+  height: 300px;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/*HEROO-QUERYS*/
+
 /* PRODUCTOS */
 #productos {
   padding: 50px 0px 50px 10px;
@@ -389,7 +402,6 @@ max-width: 1300px;
   /* background: linear-gradient(to bottom, #1f1f1f53, var(--secondary-color)); */
   transition: 0.3s all;
   box-shadow: 5px 5px 10px 2px;
-
 }
 
 #producto-img {
@@ -401,7 +413,7 @@ max-width: 1300px;
 .box-card {
   display: flex;
   flex-direction: column;
-  
+
   width: 100%;
   gap: 15px;
 }
@@ -453,7 +465,6 @@ max-width: 1300px;
 #price:hover {
   background-color: rgba(255, 255, 255, 0.156);
   color: gold;
-
 }
 
 #productos button {
@@ -686,10 +697,8 @@ footer {
   font-family: var(--texto-general);
   color: white;
   text-decoration: none;
-  transition-duration: .7s ease;
+  transition-duration: 0.7s ease;
 }
-
-
 
 .footer-info {
   display: flex;
@@ -701,13 +710,12 @@ footer {
   text-decoration: none;
   color: white;
   font-family: var(--texto-general);
-  transition: .7s all;
+  transition: 0.7s all;
 }
 
-.footer-info a:hover, 
-.redes-container a:hover 
-{
-  transition: .7s all;
+.footer-info a:hover,
+.redes-container a:hover {
+  transition: 0.7s all;
   color: gold;
 }
 /* FOOTER */
