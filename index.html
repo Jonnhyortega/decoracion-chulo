@@ -4,9 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/assets/styles.css"/>
-    <link rel="stylesheet" href="/assets/styles.css" />
+    <link rel="stylesheet" href="/assets/style-contact.css" />
     <link rel="stylesheet" href="/assets/querys.css" />
     <link rel="stylesheet" href="/assets/style-login.css" />
+    <link rel="stylesheet" href="/assets/style-registro.css">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -18,9 +19,7 @@
     <!--
    COSAS PARA ARREGLAR
       
-        5 NO SE VEN LAS OPCIONES EN EL SELECT DEL FORMULARIO DE REGISTRO.
         6 NO SE VE EL MENU-TOGGLE EN REGISTRO, ACCEDER Y CONTACTO.
-        7 LA PAGINA DE CONTACTO HAY QUE PONERLE EN EL INDEX COMO SECTION.
 -->
     <header>
       <div id="descuento-box" class="text-class-1">
@@ -46,7 +45,7 @@
 
         <ul>
           <li id="header-li"><a href="#productos">Productos</a></li>
-          <li id="header-li"><a href="/assets/contact.html">Contactanos</a></li>
+          <li id="header-li"><a href="#background-registroNew">Contactanos</a></li>
           <li id="header-li"><a href="#section-two">Nosotros</a></li>
           <li id="header-li">
             <a href="/assets/registroNew.html">Registrarse</a>
@@ -250,6 +249,33 @@
       <button>Ver más</button>
     </section>
 
+    <section id="background-registroNew">
+      
+      <form id="registro" action="registro">
+        <div class="name-adress">
+          <label for="name"
+            >Nombre
+            <input type="text" id="name" required />
+          </label>
+        </div>
+
+        <div class="email-postal-code">
+          <label for="email">
+            Email
+            <input type="email" id="email" required />
+          </label>
+        </div>
+
+        <div class="password">
+          <label for="password">
+            Mensaje
+            <textarea name="password" cols="25" rows="10"></textarea>
+          </label>
+        </div>
+        <button id="form-button">Enviar</button>
+      </form>
+    </section>
+
     <footer class="flex-column-for-querys">
       <nav id="footer-nav">
         <ul id="footer-nav-ul">
@@ -262,7 +288,7 @@
           </a>
           <!-- <li><a href="/index.html">Inicio</a></li> -->
           <li><a href="#productos">Productos</a></li>
-          <li><a href="/assets/contact.html">Contactanos</a></li>
+          <li><a href="#background-registroNew">Contactanos</a></li>
           <li><a href="/assets/registroNew.html">Registrarse</a></li>
           <li>
             <a href="/assets/login.html"

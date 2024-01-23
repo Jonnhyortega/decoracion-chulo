@@ -29,7 +29,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 100px;
+  /* gap: 100px; */
 }
 
 .text-class-1 {
@@ -58,7 +58,7 @@ header {
   position: fixed;
   padding: 15px;
   width: 100%;
-  /* height: calc(100vh - 90vh); */
+  height: calc(100vh - 85vh);
   top: 20px;
   display: flex;
   justify-content: space-between;
@@ -105,6 +105,8 @@ header {
 #header-nav i {
   font-size: 22px;
   display: none;
+  color: #1f1f1f;
+  border-radius: 5px;
 }
 
 #toggle-menu {
@@ -361,7 +363,7 @@ header {
 }
 
 .card {
-  background: linear-gradient(to bottom, #1f1f1f0d, var(--secondary-color));
+  background: linear-gradient(to bottom, #1f1f1f57, var(--secondary-color));
   padding: 20px;
   width: 340px;
   border: 5px solid rgba(255, 255, 255, 0.327);
@@ -483,20 +485,25 @@ header {
   /* border: 3px solid var(--main-color); */
   border-radius: 20px;
   max-width: 1200px;
-  background-color: #1f1f1f30;
+  background: linear-gradient(to right, hsl(0, 0%, 0%) 5%, 
+  var(--main-color) 50%,
+  hsl(0, 0%, 0%) 95%
+  );
+  /* background-color: #1f1f1f30; */
   box-shadow: 10px 10px 20px 1px #09090983;
 }
 
 #line-divisory {
   border: 4px solid var(--main-color);
-  width: 400px;
+  border-radius: 10px;
+  width: 60%;
 }
 
 #first-sub-section span {
   font-family: var(--texto-general);
   font-size: 30px;
   font-weight: 600;
-  color: #000000;
+  color: #fffefe;
 }
 
 #card #p2 {
@@ -510,6 +517,15 @@ header {
   flex-direction: column;
   gap: 20px;
   text-align: right;
+  background-color: black;
+  padding: 20px;
+  border-radius: 5px;
+  background: linear-gradient(
+  to right, 
+  hsla(20, 50%, 70%, 0) 10%,
+  hsl(0, 0%, 0%) 50%, 
+  hsla(20, 50%, 70%, 0) 90%
+  );
 }
 
 #second-sub-section {

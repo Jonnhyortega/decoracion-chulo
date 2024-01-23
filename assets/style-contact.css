@@ -1,9 +1,10 @@
 textarea {
-    font-size: 25px;
-    font-weight: 900;
-    font-family: var(--texto-general);
-width: 200px;
-height: 200px;
+font-size: 25px;
+font-weight: 900;
+font-family: var(--texto-general);
+font-size: 20px;
+width: auto;
+height: auto;
 border-radius: 5px;
 padding: 10px;
 text-align: right;
