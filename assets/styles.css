@@ -58,7 +58,7 @@ header {
   position: fixed;
   padding: 15px;
   width: 100%;
-  height: calc(100vh - 85vh);
+  /* height: calc(100vh - 85vh); */
   top: 20px;
   display: flex;
   justify-content: space-between;
