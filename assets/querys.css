@@ -6,7 +6,6 @@
     width: 100%;
   }
 
-
   #section-two {
     margin-left: 40px;
     margin-right: 40px;
@@ -37,8 +36,6 @@
   .box-hero-main {
     width: 100vh;
   }
-
- 
 
   .descuento-box {
     width: calc(100vh - 10vh);
@@ -120,18 +117,14 @@
     flex-direction: column;
   }
 
-  .first-line,
-  .second-line,
-  .third-line {
-    flex-direction: column;
+  .cards-container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
   }
 
-
-  #productos {
-    flex-direction: column;
+  .card {
+    width: 270px;
   }
-  
-  
 
   footer {
     gap: 20px;
@@ -142,20 +135,35 @@
     gap: 60px;
   }
 
+  /* PAGINA DE LOGIN */
+  #registro {
+    width: auto;
+  }
+  /* PAGINA DE LOGIN */
+
+  /* REGISTRO */
+  #background-registroNew span {
+    padding: 30px 10px 10px 30px;
+    font-size: 20px;
+  }
+
+  #registro {
+    width: auto;
+    border: none;
+    box-shadow: none;
+  }
 }
 
 @media only screen and (max-width: 601px) {
-
   .text-class-1 {
     font-weight: 700;
     font-family: var(--texto-general);
     font-size: 12px;
   }
 
-
   header {
     width: 100%;
-    height: ;
+
     align-items: center;
     gap: 10px;
   }
@@ -244,18 +252,15 @@
     flex-direction: column;
   }
 
-  .first-line,
-  .second-line,
-  .third-line {
-    flex-direction: column;
+  .cards-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
   }
 
-
-  #productos {
-    flex-direction: column;
+  #productos h2,
+  #background-registroNew h2 {
+    font-size: 40px;
   }
-  
-  
 
   footer {
     gap: 20px;
@@ -267,19 +272,20 @@
   }
 
   /* PAGINA DE LOGIN */
- #registro {
+  #registro {
     width: auto;
   }
   /* PAGINA DE LOGIN */
 
-   /* REGISTRO */
-   #background-registroNew span {
-   padding: 30px 10px 10px 30px;
-   font-size: 20px;
-  
+  /* REGISTRO */
+  #background-registroNew span {
+    padding: 30px 10px 10px 30px;
+    font-size: 20px;
   }
 
- 
-     /* REGISTRO */
-}
+  #registro {
+    width: auto;
+  }
 
+  /* REGISTRO */
+}

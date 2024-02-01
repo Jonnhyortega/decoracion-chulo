@@ -192,66 +192,17 @@ header {
   /* border: 1px solid black; */
   /* linear-gradient(to right, hsla(20, 50%, 70%, 0.842) 70%, hsla(0, 73%, 90%, 0.276)), */
   background-image: linear-gradient(
-  to right,
-  hsla(20, 50%, 70%, 0.247) 10%, 
-  hsla(20, 50%, 70%, 0) , 
-  hsl(20, 50%, 70%,0.247) 90%), 
-  
-  url(/assets/imgs/fondos-body/pexels-maria-orlova-4913388.jpg);  
+      to right,
+      hsla(20, 50%, 70%, 0.247) 10%,
+      hsla(20, 50%, 70%, 0),
+      hsl(20, 50%, 70%, 0.247) 90%
+    ),
+    url(/assets/imgs/fondos-body/pexels-maria-orlova-4913388.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
   background-color: rgba(0, 0, 0, 0.2);
 }
-
-/* .box-hero-main {
-  padding: 30px;
-  display: flex;
-  gap: 10px;
-  background-color: var(--main-color);
-  margin: 100px;
-  max-width: 1300px;
-  height: 100%;
-  border: 5px solid black;
-  border-radius: 20px;
-  box-shadow: 10px 0px 10px 0px;
-  z-index: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  transition: all 2s ease;
-  overflow: hidden;
-  backdrop-filter: blur(2px) saturate(92%);
-  -webkit-backdrop-filter: blur(10px) saturate(192%);
-  background-color: rgba(255, 255, 255, 0);
-  border-radius: 12px;
-  border: 1px solid rgba(209, 213, 219, 0.3);
-} */
-
-/* .box-hero-main::before {
-  position: fixed;
-  transition: 1.2s all;
-  content: "";
-  box-shadow: 0 0 100px 40px #ffffff7b;
-  top: -10%;
-  left: -100%;
-  transform: rotate(-45deg);
-  height: 60rem;
-} */
-
-/* .box-hero-main:hover::before {
-  filter: brightness(1.5);
-  top: -100%;
-  left: 200%;
-} */
-
-/* .box-hero-main:hover {
-  border: 1px solid white;
-  box-shadow: 0 7px 50px 5px #00000077;
-  /* transform: scale(1.015); */
-  /* transition: 0.7s ease; */
-/* }  */
 
 .box-hero-left {
   border-radius: 20px;
@@ -296,7 +247,6 @@ header {
   backdrop-filter: blur(10px) saturate(92%);
 }
 
-
 #ver-productos {
   display: flex;
   justify-content: center;
@@ -314,8 +264,7 @@ header {
   font-family: var(--texto-general);
   transition: 1s ease;
   box-shadow: 5px 5px 20px 0px #030303ba;
-} 
-
+}
 
 #ver-productos:hover {
   background-color: white;
@@ -337,36 +286,63 @@ header {
   height: 300px;
   justify-content: center;
   align-items: center;
-  
 }
-
 
 /*HEROO-QUERYS*/
 
 /* PRODUCTOS */
 #productos {
-  padding: 50px 0px 50px 10px;
+  padding: 0px 0px 100px 0px;
   width: 100%;
   /* background-color: #1f1f1f30; */
-
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
+  gap: 50px;
 }
 
-.first-line,
+#productos h2,
+#background-registroNew h2 {
+  /* EL COLOR DEL SEGUNDO 
+  H2 SE ENCUENTRA
+  CONFIGURADO DESDE 
+  LA HOJA HTML */
+  text-align: center;
+  margin-top: 50px;
+  font-family: var(--texto-general);
+  font-size: 80px;
+  font-weight: 900;
+  letter-spacing: 10px;
+  padding-bottom: 70px;
+  border-bottom: 10px solid var(--main-color);
+  transition: 0.7s ease;
+  width: 50%;
+}
+
+#productos h2:hover {
+  transition: 0.7s;
+  border-bottom: 10px solid gold;
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 50px;
+}
+
+/* .first-line,
 .second-line,
 .third-line {
   display: flex;
   gap: 30px;
-}
+} */
 
 .card {
   background: linear-gradient(to bottom, #1f1f1f57, var(--secondary-color));
   padding: 20px;
   width: 340px;
-  border: 5px solid rgba(255, 255, 255, 0.327);
+  border: 5px solid rgb(255, 255, 255);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -386,7 +362,6 @@ header {
 }
 
 #producto-img {
-
   width: 100%;
   height: 250px;
   border-radius: 10px;
@@ -462,6 +437,9 @@ header {
   font-weight: 100;
   transition: 0.5s ease;
   box-shadow: 5px 5px 5px 0px #1f1f1f;
+  display: grid;
+  place-content: center;
+  left: 50%;
 }
 
 #productos button:hover {
@@ -522,7 +500,7 @@ header {
   hsl(0, 0%, 0%) 50%, 
   hsla(20, 50%, 70%, 0) 90%
   ); */
-} 
+}
 
 #second-sub-section {
   display: flex;
@@ -605,6 +583,7 @@ header {
 /* SECTION 2 */
 
 /* FOOTER */
+
 /* NAV */
 footer {
   background-color: #1f1f1f;

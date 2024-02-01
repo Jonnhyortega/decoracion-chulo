@@ -3,11 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/assets/styles.css"/>
+    <link rel="stylesheet" href="/assets/styles.css" />
     <link rel="stylesheet" href="/assets/style-contact.css" />
     <link rel="stylesheet" href="/assets/querys.css" />
     <link rel="stylesheet" href="/assets/style-login.css" />
-    <link rel="stylesheet" href="/assets/style-registro.css">
+    <link rel="stylesheet" href="/assets/style-registro.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -16,11 +16,6 @@
     <title>Chulo terrazos</title>
   </head>
   <body>
-    <!--
-   COSAS PARA ARREGLAR
-      
-        6 NO SE VE EL MENU-TOGGLE EN REGISTRO, ACCEDER Y CONTACTO.
--->
     <header>
       <div id="descuento-box" class="text-class-1">
         <span>💸 15% OFF EFECTIVO </span><span>💰15% OFF TRANSFERENCIA</span>
@@ -45,7 +40,9 @@
 
         <ul>
           <li id="header-li"><a href="#productos">Productos</a></li>
-          <li id="header-li"><a href="#background-registroNew">Contactanos</a></li>
+          <li id="header-li">
+            <a href="#background-registroNew">Contactanos</a>
+          </li>
           <li id="header-li"><a href="#section-two">Nosotros</a></li>
           <li id="header-li">
             <a href="/assets/registroNew.html">Registrarse</a>
@@ -58,25 +55,20 @@
     </header>
 
     <section id="hero">
-      
-        <div class="box-hero-left">
+      <div class="box-hero-left">
+        <img src="/assets/imgs/logo-header.png" alt="Logo-hero" />
 
-            <img src="/assets/imgs/logo-header.png" alt="Logo-hero" />
-        
-          <div id="box-span">
-              <span>Decoración de interiores</span>
-          </div>
-          <a id="ver-productos" href="#productos">Ver productos</a>
+        <div id="box-span">
+          <span>Decoración de interiores</span>
         </div>
-
+        <a id="ver-productos" href="#productos">Ver productos</a>
+      </div>
     </section>
 
     <section id="hero-querys">
+      <img src="/assets/imgs/logo-header.png" alt="Logo-hero" />
 
-          <img src="/assets/imgs/logo-header.png" alt="Logo-hero" />
-
-        <a id="ver-productos" href="#productos"> Ver productos</a>
-
+      <a id="ver-productos" href="#productos"> Ver productos</a>
     </section>
 
     <section id="section-two">
@@ -113,7 +105,9 @@
     </section>
 
     <section id="productos">
-      <div class="first-line">
+      <h2>Nuestros productos</h2>
+
+      <div class="cards-container">
         <div class="card">
           <img
             id="producto-img"
@@ -156,9 +150,7 @@
             <span id="medios-pago">Ver medios de pago 💸</span>
           </div>
         </div>
-      </div>
 
-      <div class="second-line">
         <div class="card">
           <img
             id="producto-img"
@@ -200,9 +192,7 @@
             <span id="medios-pago">Ver medios de pago 💸</span>
           </div>
         </div>
-      </div>
 
-      <div class="third-line">
         <div class="card">
           <img
             id="producto-img"
@@ -250,7 +240,7 @@
     </section>
 
     <section id="background-registroNew">
-      
+      <h2 style="border-bottom-color: white; color: WHITE">Contacto</h2>
       <form id="registro" action="registro">
         <div class="name-adress">
           <label for="name"
