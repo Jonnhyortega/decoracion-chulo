@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="/assets/querys.css" />
     <link rel="stylesheet" href="/assets/style-login.css" />
     <link rel="stylesheet" href="/assets/style-registro.css" />
+    <link rel="icon" href="/assets/imgs/chulos-terrazos.png" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -17,20 +18,13 @@
   </head>
   <body>
     <header>
-      <div id="descuento-box" class="text-class-1">
-        <span>💸 15% OFF EFECTIVO </span><span>💰15% OFF TRANSFERENCIA</span>
-      </div>
-
-      <div class="input-container">
-        <input id="search-header" type="search" />
-        <button>Buscar</button>
-      </div>
-
-      <div class="container-img">
-        <a href="/index.html"
-          ><img src="/assets/imgs/logo-header.png" alt="Logo Chulos" />
-        </a>
-      </div>
+      <a href="/index.html"
+        ><img
+          id="img-header"
+          src="/assets/imgs/logo-header.png"
+          alt="Logo Chulos"
+        />
+      </a>
 
       <nav id="header-nav">
         <label for="toggle-menu"
@@ -52,6 +46,13 @@
           </li>
         </ul>
       </nav>
+
+      <div id="descuento-box" class="text-class-1">
+        <span id="descuento-text"
+          >💸 15% OFF EFECTIVO 💰15% OFF TRANSFERENCIA
+        </span>
+        <span id="descuento-object">🤯</span>
+      </div>
     </header>
 
     <section id="hero">
@@ -65,12 +66,6 @@
       </div>
     </section>
 
-    <section id="hero-querys">
-      <img src="/assets/imgs/logo-header.png" alt="Logo-hero" />
-
-      <a id="ver-productos" href="#productos"> Ver productos</a>
-    </section>
-
     <section id="section-two">
       <div id="first-sub-section">
         <span>
@@ -82,6 +77,7 @@
         </span>
       </div>
       <div id="line-divisory"></div>
+
       <div id="second-sub-section">
         <div id="card-beneficios">
           <img src="/assets/imgs/billete-de-banco.png " alt="Icono de dolar" />
@@ -106,6 +102,11 @@
 
     <section id="productos">
       <h2>Nuestros productos</h2>
+
+      <div class="input-container">
+        <input placeholder="Buscar" id="search" type="search" />
+        <button id="buscar"><i class="fa-brands fa-searchengin"></i></button>
+      </div>
 
       <div class="cards-container">
         <div class="card">
@@ -236,11 +237,11 @@
         </div>
       </div>
 
-      <button>Ver más</button>
+      <button id="verMas">Ver más</button>
     </section>
 
     <section id="background-registroNew">
-      <h2 style="border-bottom-color: white; color: WHITE">Contacto</h2>
+      <h2>Contacto</h2>
       <form id="registro" action="registro">
         <div class="name-adress">
           <label for="name"
@@ -301,33 +302,23 @@
       </div>
 
       <div class="redes-container">
-        <span>Seguinos en nuestras redes:</span>
+        <span>Seguinos:</span>
         <div class="redes-footer">
           <a
             target="_blank"
             href="https://www.facebook.com/search/top?q=chulos%20terrazzo"
-            ><img
-              class="container-img"
-              src="./assets/imgs/facebook.png"
-              alt="Logo Facebook"
-            />
+            ><img src="./assets/imgs/facebook.png" alt="Logo Facebook" />
           </a>
-          <a target="_blank" href="https://www.twitter.com">
-            <img class="container-img" src="./assets/imgs/x.png" alt="Logo X" />
-          </a>
+
           <a
             target="_blank"
-            href="https://www.youtube.com/watch?v=R4id1K3P8mI&ab_channel=elnegroquetose"
+            href="https://www.instagram.com/chulos.terrazzo/   "
           >
-            <img
-              class="container-img"
-              src="./assets/imgs/youtube.png"
-              alt="Señor que toce"
-            />
+            <img src="./assets/imgs/instagram.png" alt="Logo X" />
           </a>
         </div>
-        <a id="whatsapp" target="_blank" href="/https://web.whatsapp.com/">
-          📞 +54 011 2265 4367</a
+        <a id="whatsapp" target="_blank" href="https://w.app/RaszQ5">
+          📞 +54 9 11 5822-7373</a
         >
       </div>
 
@@ -335,7 +326,7 @@
         <a href="">Cómo comprar</a>
         <a href="">Formas de entrega</a>
         <a href="">Horarios de atencion</a>
-        <a href="">Posventa</a>
+        <a href="">Postventa</a>
       </div>
     </footer>
   </body>
