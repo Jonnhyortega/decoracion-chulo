@@ -22,97 +22,92 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: auto;
   background-color: #1f1f1fcd;
+}
 
-  #registro {
-    margin-top: 80px;
-    margin-bottom: 150px;
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-    width: auto;
-    height: auto;
-    padding: 20px;
-    gap: 20px;
-    box-shadow: 15px 15px 30px 0px #030303ba;
-    border-radius: 10px;
-    border: 10px solid var(--main-color);
-  }
+#registro {
+  margin-top: 80px;
+  margin-bottom: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  width: 50%;
+  padding: 20px;
+  gap: 20px;
+  box-shadow: 15px 15px 30px 0px #030303ba;
+  border-radius: 10px;
+  border: 10px solid var(--main-color);
+}
 
-  #background-registroNew span {
-    font-size: 30px;
-    font-weight: 700;
-    font-family: var(--texto-general);
-    margin-bottom: 30px;
-  }
+#background-registroNew span {
+  font-size: 30px;
+  font-weight: 700;
+  font-family: var(--texto-general);
+  margin-bottom: 30px;
+}
 
-  label {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    font-family: var(--texto-general);
-    font-size: 25px;
-    font-weight: 600;
-    color: var(--main-color);
-  }
+label {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-family: var(--texto-general);
+  font-size: 1.5em;
+  font-weight: 600;
+  color: var(--main-color);
+}
 
-  #name,
-  #adress,
-  #phone,
-  #lugar,
-  #email,
-  #postal-code,
-  #password,
-  #confirm-password,
-  option {
-    border-radius: 5px;
-    /* padding: 10px; */
-    /* width: 70%; */
-    border: none;
-    height: auto;
-    font: var(--text-titulo);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+#name,
+#adress,
+#phone,
+#lugar,
+#email,
+#postal-code,
+#password,
+#confirm-password,
+option {
+  border-radius: 5px;
+  border: none;
+  font: var(--text-titulo);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-  .container-form-button {
-    display: flex;
-    justify-content: center;
-    height: auto;
-    width: auto;
-  }
+.container-form-button {
+  display: flex;
+  justify-content: center;
+  height: auto;
+  width: auto;
+}
 
-  #form-button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px;
-    width: 50%;
-    height: auto;
-    font-family: var(--texto-general);
-    color: #ffffff;
-    font-size: 20px;
-    font-weight: 700;
-    text-align: center;
+#form-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  width: 50%;
+  height: auto;
+  font-family: var(--texto-general);
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
 
-    cursor: pointer;
-    transition: 0.5s ease;
-    margin-top: 30px;
-    border-radius: 5px;
+  cursor: pointer;
+  transition: 0.5s ease;
+  margin-top: 30px;
+  border-radius: 5px;
 
-    background-color: #1f1f1f8b;
-    border: 2px solid rgba(255, 255, 255, 0.294);
-  }
+  background-color: #1f1f1f8b;
+  border: 2px solid rgba(255, 255, 255, 0.294);
+}
 
-  #form-button:hover {
-    transition: 0.5s ease;
-    font-size: 600;
-    letter-spacing: 1px;
-    background-color: #1f1f1f8b;
-    border: 2px solid var(--main-color);
-    color: var(--main-color);
-    box-shadow: 2px 2px 10px 0px rgba(255, 255, 255, 0.705);
-  }
+#form-button:hover {
+  transition: 0.5s ease;
+  font-size: 600;
+  letter-spacing: 1px;
+  background-color: #1f1f1f8b;
+  border: 2px solid var(--main-color);
+  color: var(--main-color);
+  box-shadow: 2px 2px 10px 0px rgba(255, 255, 255, 0.705);
 }
