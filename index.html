@@ -4,10 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/assets/styles.css" />
-    <link rel="stylesheet" href="/assets/style-contact.css" />
+    <!-- <link rel="stylesheet" href="/assets/style-contact.css" /> -->
     <link rel="stylesheet" href="/assets/querys.css" />
-    <link rel="stylesheet" href="/assets/style-login.css" />
-    <link rel="stylesheet" href="/assets/style-registro.css" />
+    <!-- <link rel="stylesheet" href="/assets/style-login.css" /> -->
+    <!-- <link rel="stylesheet" href="/assets/style-registro.css" /> -->
     <link rel="icon" href="/assets/imgs/chulos-terrazos.png" />
     <link
       rel="stylesheet"
@@ -18,6 +18,12 @@
   </head>
   <body>
     <header>
+      <i
+        id="menu_toggle"
+        onclick="desplegarMenu();"
+        class="fa-solid fa-caret-down"
+      ></i>
+
       <a href="/index.html"
         ><img
           id="img-header"
@@ -27,12 +33,7 @@
       </a>
 
       <nav id="header-nav">
-        <label for="toggle-menu"
-          ><i class="fa-sharp fa-solid fa-bars"></i
-        ></label>
-        <input type="checkbox" id="toggle-menu" />
-
-        <ul>
+        <ul id="navegador-mobile">
           <li id="header-li"><a href="#productos">Productos</a></li>
           <li id="header-li">
             <a href="#background-registroNew">Contactanos</a>
@@ -59,16 +60,15 @@
       <div class="box-hero-left">
         <img src="/assets/imgs/logo-header.png" alt="Logo-hero" />
 
-        <div id="box-span">
-          <span>Decoración de interiores</span>
-        </div>
+        <span id="deco-title">Decoración de interiores</span>
+
         <a id="ver-productos" href="#productos">Ver productos</a>
       </div>
     </section>
 
     <section id="section-two">
       <div id="first-sub-section">
-        <span>
+        <span id="texto-garantia">
           Nuestra garantía es la base de tu confianza. Respaldamos cada producto
           con buena calidad y precios accesibles. En cada compra, te ofrecemos
           no solo un producto, sino también la tranquilidad de saber que estás
@@ -115,11 +115,17 @@
             src="./assets/imgs/escritorio.jpeg"
             alt="Escritorio"
           />
+
           <div class="box-card">
-            <span id="description">Escritorio para pc.</span>
             <span id="price">$55.000</span>
-            <button><i class="fa-solid fa-plus"></i></button>
-            <span id="medios-pago">Ver medios de pago 💸</span>
+            <span id="descuento">-15%</span>
+          </div>
+
+          <span id="description">Escritorio pc.</span>
+
+          <div class="box-card-button">
+            <button id="agregar">Agregar</button>
+            <i class="fa-solid fa-cart-shopping"></i>
           </div>
         </div>
 
@@ -129,11 +135,17 @@
             src="./assets/imgs/escritorio.jpeg"
             alt="Escritorio"
           />
+
           <div class="box-card">
-            <span id="description">Escritorio para pc.</span>
             <span id="price">$55.000</span>
-            <button><i class="fa-solid fa-plus"></i></button>
-            <span id="medios-pago">Ver medios de pago 💸</span>
+            <span id="descuento">-15%</span>
+          </div>
+
+          <span id="description">Escritorio pc.</span>
+
+          <div class="box-card-button">
+            <button id="agregar">Agregar</button>
+            <i class="fa-solid fa-cart-shopping"></i>
           </div>
         </div>
 
@@ -143,11 +155,17 @@
             src="./assets/imgs/escritorio.jpeg"
             alt="Escritorio"
           />
+
           <div class="box-card">
-            <span id="description">Escritorio para pc.</span>
             <span id="price">$55.000</span>
-            <button><i class="fa-solid fa-plus"></i></button>
-            <span id="medios-pago">Ver medios de pago 💸</span>
+            <span id="descuento">-15%</span>
+          </div>
+
+          <span id="description">Escritorio pc.</span>
+
+          <div class="box-card-button">
+            <button id="agregar">Agregar</button>
+            <i class="fa-solid fa-cart-shopping"></i>
           </div>
         </div>
 
@@ -157,11 +175,17 @@
             src="./assets/imgs/escritorio.jpeg"
             alt="Escritorio"
           />
+
           <div class="box-card">
-            <span id="description">Escritorio para pc.</span>
             <span id="price">$55.000</span>
-            <button><i class="fa-solid fa-plus"></i></button>
-            <span id="medios-pago">Ver medios de pago 💸</span>
+            <span id="descuento">-15%</span>
+          </div>
+
+          <span id="description">Escritorio pc.</span>
+
+          <div class="box-card-button">
+            <button id="agregar">Agregar</button>
+            <i class="fa-solid fa-cart-shopping"></i>
           </div>
         </div>
 
@@ -171,11 +195,17 @@
             src="./assets/imgs/escritorio.jpeg"
             alt="Escritorio"
           />
+
           <div class="box-card">
-            <span id="description">Escritorio para pc.</span>
             <span id="price">$55.000</span>
-            <button><i class="fa-solid fa-plus"></i></button>
-            <span id="medios-pago">Ver medios de pago 💸</span>
+            <span id="descuento">-15%</span>
+          </div>
+
+          <span id="description">Escritorio pc.</span>
+
+          <div class="box-card-button">
+            <button id="agregar">Agregar</button>
+            <i class="fa-solid fa-cart-shopping"></i>
           </div>
         </div>
 
@@ -185,11 +215,137 @@
             src="./assets/imgs/escritorio.jpeg"
             alt="Escritorio"
           />
+
           <div class="box-card">
-            <span id="description">Escritorio para pc.</span>
             <span id="price">$55.000</span>
-            <button><i class="fa-solid fa-plus"></i></button>
-            <span id="medios-pago">Ver medios de pago 💸</span>
+            <span id="descuento">-15%</span>
+          </div>
+
+          <span id="description">Escritorio pc.</span>
+
+          <div class="box-card-button">
+            <button id="agregar">Agregar</button>
+            <i class="fa-solid fa-cart-shopping"></i>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            id="producto-img"
+            src="./assets/imgs/escritorio.jpeg"
+            alt="Escritorio"
+          />
+
+          <div class="box-card">
+            <span id="price">$55.000</span>
+            <span id="descuento">-15%</span>
+          </div>
+
+          <span id="description">Escritorio pc.</span>
+
+          <div class="box-card-button">
+            <button id="agregar">Agregar</button>
+            <i class="fa-solid fa-cart-shopping"></i>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            id="producto-img"
+            src="./assets/imgs/escritorio.jpeg"
+            alt="Escritorio"
+          />
+
+          <div class="box-card">
+            <span id="price">$55.000</span>
+            <span id="descuento">-15%</span>
+          </div>
+
+          <span id="description">Escritorio pc.</span>
+
+          <div class="box-card-button">
+            <button id="agregar">Agregar</button>
+            <i class="fa-solid fa-cart-shopping"></i>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            id="producto-img"
+            src="./assets/imgs/escritorio.jpeg"
+            alt="Escritorio"
+          />
+
+          <div class="box-card">
+            <span id="price">$55.000</span>
+            <span id="descuento">-15%</span>
+          </div>
+
+          <span id="description">Escritorio pc.</span>
+
+          <div class="box-card-button">
+            <button id="agregar">Agregar</button>
+            <i class="fa-solid fa-cart-shopping"></i>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            id="producto-img"
+            src="./assets/imgs/escritorio.jpeg"
+            alt="Escritorio"
+          />
+
+          <div class="box-card">
+            <span id="price">$55.000</span>
+            <span id="descuento">-15%</span>
+          </div>
+
+          <span id="description">Escritorio pc.</span>
+
+          <div class="box-card-button">
+            <button id="agregar">Agregar</button>
+            <i class="fa-solid fa-cart-shopping"></i>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            id="producto-img"
+            src="./assets/imgs/escritorio.jpeg"
+            alt="Escritorio"
+          />
+
+          <div class="box-card">
+            <span id="price">$55.000</span>
+            <span id="descuento">-15%</span>
+          </div>
+
+          <span id="description">Escritorio pc.</span>
+
+          <div class="box-card-button">
+            <button id="agregar">Agregar</button>
+            <i class="fa-solid fa-cart-shopping"></i>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            id="producto-img"
+            src="./assets/imgs/escritorio.jpeg"
+            alt="Escritorio"
+          />
+
+          <div class="box-card">
+            <span id="price">$55.000</span>
+            <span id="descuento">-15%</span>
+          </div>
+
+          <span id="description">Escritorio pc.</span>
+
+          <div class="box-card-button">
+            <button id="agregar">Agregar</button>
+            <i class="fa-solid fa-cart-shopping"></i>
           </div>
         </div>
       </div>
@@ -199,27 +355,23 @@
 
     <section id="background-registroNew">
       <h2>Contacto</h2>
+
       <form id="registro" action="registro">
-        <div class="name-adress">
-          <label for="name"
-            >Nombre
-            <input type="text" id="name" required />
-          </label>
-        </div>
+        <label id="label-index" for="name"
+          >Nombre
+          <input type="text" id="name" required />
+        </label>
+        <!--  -->
+        <label id="label-index" for="email">
+          Email
+          <input type="email" id="email" required />
+        </label>
 
-        <div class="email-postal-code">
-          <label for="email">
-            Email
-            <input type="email" id="email" required />
-          </label>
-        </div>
+        <label id="label-index" for="password">
+          Mensaje
+          <textarea name="password" cols="25" rows="10"></textarea>
+        </label>
 
-        <div class="password">
-          <label for="password">
-            Mensaje
-            <textarea name="password" cols="25" rows="10"></textarea>
-          </label>
-        </div>
         <button id="form-button">Enviar</button>
       </form>
     </section>
@@ -286,5 +438,7 @@
         <a href="">Postventa</a>
       </div>
     </footer>
+
+    <script src="/assets/app.js"></script>
   </body>
 </html>

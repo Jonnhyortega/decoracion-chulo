@@ -1,0 +1,41 @@
+@media (max-width: 1350px) {
+  .cards-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 1150px) {
+  .cards-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 700px) {
+  .cards-container {
+    grid-template-columns: 1fr;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 600px) {
+  #deco-title {
+    font-size: 2rem;
+    display: none;
+  }
+
+  #second-sub-section {
+    grid-template-columns: 1fr;
+  }
+
+  iframe {
+    width: 50%;
+  }
+}
+
+@media (max-width: 500px) {
+  
+}
