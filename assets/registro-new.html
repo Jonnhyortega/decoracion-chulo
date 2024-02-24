@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="/assets/styles.css" />
+      <link rel="stylesheet" href="/assets/querys.css" />
+      <link rel="stylesheet" href="/assets/style-registro.css" />
+      <!-- <link rel="stylesheet" href="/assets/style-login.css" /> -->
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      />
+      <link rel="icon" href="/assets/imgs/chulos-terrazos.png" />
+      <link rel="icon" href="/assets/imgs/logo-header.png" />
+      <title>Registtro</title>
+    </head>
+  </head>
+
+  <body id="body-RN">
+    <header>
+      <i
+        id="menu_toggle"
+        onclick="desplegarMenu();"
+        class="fa-solid fa-chart-bar"
+      ></i>
+      <a href="/index.html"
+        ><img
+          id="img-header"
+          src="/assets/imgs/logo-header.png"
+          alt="Logo Chulos"
+        />
+      </a>
+
+      <nav id="header-nav">
+        <ul id="navegador-mobile">
+          <li id="header-li"><a href="#productos">Productos</a></li>
+          <li id="header-li">
+            <a href="#background-registroNew">Contactanos</a>
+          </li>
+          <li id="header-li"><a href="#section-two">Nosotros</a></li>
+          <li id="header-li">
+            <a href="/assets/registroNew.html">Registrarse</a>
+          </li>
+          <li id="header-li">
+            <a href="/assets/login.html">Acceder</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div id="descuento-box" class="text-class-1">
+        <span id="descuento-text"
+          >💸 15% OFF EFECTIVO 💰15% OFF TRANSFERENCIA
+        </span>
+        <span id="descuento-object">🤯</span>
+      </div>
+    </header>
+
+    <h3 id="title-RN">Complete los siguientes datos:</h3>
+
+    <form id="registro-RN" action="registro">
+     
+        <input class="input-RN" type="text" id="name-RN" required placeholder="Nombre" />
+
+      <input class="input-RN" type="text" id="adress-RN" required placeholder="Apellido" />
+
+      <input class="input-RN" type="number" id="phone-RN" required max="10" placeholder="Telefono" />
+
+      <select class="input-RN" name="lugar" id="lugar" required placeholder="Seleccione lugar de residencia">
+        <option disabled>Seleccione lugar de residencia</option>
+        <option value="caba">Ciudad Autonoma de Buenos Aires</option>
+        <option value="buenos-aires">Buenos Aires</option>
+        <option value="catamarca">Catamarca</option>
+        <option value="chaco">Chaco</option>
+        <option value="chubut">Chubut</option>
+        <option value="cordoba">Córdoba</option>
+        <option value="corrientes">Corrientes</option>
+        <option value="entre-rios">Entre Ríos</option>
+        <option value="formosa">Formosa</option>
+        <option value="jujuy">Jujuy</option>
+        <option value="la-pampa">La Pampa</option>
+        <option value="la-rioja">La Rioja</option>
+        <option value="mendoza">Mendoza</option>
+        <option value="misiones">Misiones</option>
+        <option value="neuquen">Neuquén</option>
+        <option value="rio-negro">Río Negro</option>
+        <option value="salta">Salta</option>
+        <option value="san-juan">San Juan</option>
+        <option value="san-luis">San Luis</option>
+        <option value="santa-cruz">Santa Cruz</option>
+        <option value="santa-fe">Santa Fe</option>
+        <option value="santiago-del-estero">Santiago del Estero</option>
+        <option value="tierra-del-fuego">Tierra del Fuego</option>
+        <option value="tucuman">Tucumán</option>
+      </select>
+
+      <input class="input-RN" type="email" id="email-RN" required placeholder="Correo electrónico" />
+
+      <input class="input-RN" type="number" id="postal-code-RN" required placeholder="Código postal" />
+
+      <input class="input-RN" type="text" id="direccion-RN" placeholder="Direccion" />
+
+      <input
+        class="input-RN"
+        type="password"
+        id="password-login"
+        max="8"
+        min="8"
+        required
+        placeholder="Ingrese contraseña"
+      />
+
+      <i
+        id="button-show-password"
+        onclick="mostrarPassword()"
+        class="fa-regular fa-eye"
+      ></i>
+
+      <div class="passwordMostrado"></div>
+    </form>
+
+    <button id="form-button-RN">Registrarse</button>
+
+    <footer class="flex-column-for-querys">
+      <nav id="footer-nav">
+        <ul id="footer-nav-ul">
+          <a href="/index.html"
+            ><img
+              class="container-img"
+              src="/assets/imgs/logo-header.png"
+              alt="Logo Chulos"
+            />
+          </a>
+          <li><a href="/index.html">Inicio</a></li>
+          <li><a href="#productos">Productos</a></li>
+          <li><a href="#background-registroNew">Contactanos</a></li>
+          <li><a href="/assets/registroNew.html">Registrarse</a></li>
+          <li>
+            <a href="/assets/login.html"
+              ><span>Iniciar</span> <span>Sesión</span></a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <div class="maps">
+        <span>Villa Lugano</span>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3280.645664338518!2d-58.472813825207744!3d-34.68889136199974!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcceaeeacb5437%3A0x799c6c237dd412a1!2sCorrales%20%26%20Ca%C3%B1ada%20de%20G%C3%B3mez%2C%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1704921353732!5m2!1ses-419!2sar"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        >
+        </iframe>
+      </div>
+
+      <div class="redes-container">
+        <span>Seguinos:</span>
+        <div class="redes-footer">
+          <a
+            target="_blank"
+            href="https://www.facebook.com/search/top?q=chulos%20terrazzo"
+            ><img src="/assets/imgs/facebook.png" alt="Logo Facebook" />
+          </a>
+
+          <a
+            target="_blank"
+            href="https://www.instagram.com/chulos.terrazzo/   "
+          >
+            <img src="/assets/imgs/instagram.png" alt="Logo X" />
+          </a>
+        </div>
+        <a id="whatsapp" target="_blank" href="https://w.app/RaszQ5">
+          📞 +54 9 11 5822-7373</a
+        >
+      </div>
+
+      <div class="footer-info">
+        <a href="">Cómo comprar</a>
+        <a href="">Formas de entrega</a>
+        <a href="">Horarios de atencion</a>
+        <a href="">Postventa</a>
+      </div>
+    </footer>
+
+    <script src="/assets/app.js"></script>
+  </body>
+</html>

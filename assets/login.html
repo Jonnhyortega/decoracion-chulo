@@ -4,45 +4,40 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/assets/styles.css" />
-    <link rel="stylesheet" href="/assets/style-contact.css" />
+    <!-- <link rel="stylesheet" href="/assets/style-contact.css" /> -->
     <link rel="stylesheet" href="/assets/querys.css" />
     <link rel="stylesheet" href="/assets/style-login.css" />
-    <link rel="stylesheet" href="/assets/style-registro.css" />
+    <!-- <link rel="stylesheet" href="/assets/style-registro.css" /> -->
     <link rel="icon" href="/assets/imgs/chulos-terrazos.png" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
     <link rel="icon" href="/assets/imgs/logo-header.png" />
-    <title>Chulo terrazos</title>
+    <title>Inicio de sesión</title>
   </head>
   <body>
     <header>
-      <div id="descuento-box" class="text-class-1">
-        <span>💸 15% OFF EFECTIVO </span><span>💰15% OFF TRANSFERENCIA</span>
-      </div>
-
-      <div class="input-container">
-        <input id="search-header" type="search" />
-        <button>Buscar</button>
-      </div>
-
-      <div class="container-img">
-        <a href="/index.html"
-          ><img src="/assets/imgs/logo-header.png" alt="Logo Chulos" />
-        </a>
-      </div>
+      <i
+        id="menu_toggle"
+        onclick="desplegarMenu();"
+        class="fa-solid fa-chart-bar"
+      ></i>
+      <a href="/index.html"
+        ><img
+          id="img-header"
+          src="/assets/imgs/logo-header.png"
+          alt="Logo Chulos"
+        />
+      </a>
 
       <nav id="header-nav">
-        <label for="toggle-menu"
-          ><i class="fa-sharp fa-solid fa-bars"></i
-        ></label>
-        <input type="checkbox" id="toggle-menu" />
-
-        <ul>
-          <li id="header-li"><a href="#productos">Productos</a></li>
-          <li id="header-li"><a href="/assets/contact.html">Contactanos</a></li>
-          <li id="header-li"><a href="#section-two">Nosotros</a></li>
+        <ul id="navegador-mobile">
+          <li id="header-li"><a href="/index.html">Productos</a></li>
+          <li id="header-li">
+            <a href="/index.html">Contactanos</a>
+          </li>
+          <li id="header-li"><a href="/index.html">Nosotros</a></li>
           <li id="header-li">
             <a href="/assets/registroNew.html">Registrarse</a>
           </li>
@@ -51,24 +46,49 @@
           </li>
         </ul>
       </nav>
+
+      <div id="descuento-box" class="text-class-1">
+        <span id="descuento-text"
+          >💸 15% OFF EFECTIVO 💰15% OFF TRANSFERENCIA
+        </span>
+        <span id="descuento-object">🤯</span>
+      </div>
     </header>
 
-    <section id="background-registroNew">
-      <form id="registro" action="registro">
-          <label for="email">Correo
-            <input type="email" id="email" required />
-          </label>
-        
+    <section id="background-registro-login">
+      <form id="registro-login" action="registro">
+        <h3 id="title-login">Ingrese sus datos:</h3>
 
-          <label id="label-password" for="password">Contraseña
-            <input type="password" id="password" max="8" min="8" required />
-          </label>
+        <input
+          placeholder="ejemplo@dominio.com"
+          type="email"
+          id="email-login"
+          required
+        />
 
-        <button id="form-button">Login</button>
+        <div class="box-password">
+          <input
+            placeholder="Contraseña"
+            type="password"
+            id="password-login"
+            max="8"
+            min="8"
+            required
+          />
+
+          <i
+            id="button-show-password"
+            onclick="mostrarPassword()"
+            class="fa-regular fa-eye"
+          ></i>
+          <div class="passwordMostrado"></div>
+        </div>
+
+        <button id="button-login">Login</button>
       </form>
     </section>
 
-    <footer>
+    <footer class="flex-column-for-querys">
       <nav id="footer-nav">
         <ul id="footer-nav-ul">
           <a href="/index.html"
@@ -80,7 +100,7 @@
           </a>
           <!-- <li><a href="/index.html">Inicio</a></li> -->
           <li><a href="#productos">Productos</a></li>
-          <li><a href="/assets/contact.html">Contactanos</a></li>
+          <li><a href="#background-registroNew">Contactanos</a></li>
           <li><a href="/assets/registroNew.html">Registrarse</a></li>
           <li>
             <a href="/assets/login.html"
@@ -103,33 +123,23 @@
       </div>
 
       <div class="redes-container">
-        <span>Seguinos en nuestras redes:</span>
+        <span>Seguinos:</span>
         <div class="redes-footer">
           <a
             target="_blank"
             href="https://www.facebook.com/search/top?q=chulos%20terrazzo"
-            ><img
-              class="container-img"
-              src="/assets/imgs/facebook.png"
-              alt="Logo Facebook"
-            />
+            ><img src="/assets/imgs/facebook.png" alt="Logo Facebook" />
           </a>
-          <a target="_blank" href="https://www.twitter.com">
-            <img class="container-img" src="/assets/imgs/x.png" alt="Logo X" />
-          </a>
+
           <a
             target="_blank"
-            href="https://www.youtube.com/watch?v=R4id1K3P8mI&ab_channel=elnegroquetose"
+            href="https://www.instagram.com/chulos.terrazzo/   "
           >
-            <img
-              class="container-img"
-              src="/assets/imgs/youtube.png"
-              alt="Señor que toce"
-            />
+            <img src="/assets/imgs/instagram.png" alt="Logo X" />
           </a>
         </div>
-        <a id="whatsapp" target="_blank" href="/https://web.whatsapp.com/"
-          ><span> 📞 +54 011 2265 4367</span></a
+        <a id="whatsapp" target="_blank" href="https://w.app/RaszQ5">
+          📞 +54 9 11 5822-7373</a
         >
       </div>
 
@@ -137,8 +147,10 @@
         <a href="">Cómo comprar</a>
         <a href="">Formas de entrega</a>
         <a href="">Horarios de atencion</a>
-        <a href="">Posventa</a>
+        <a href="">Postventa</a>
       </div>
     </footer>
+
+    <script src="app.js"></script>
   </body>
 </html>
