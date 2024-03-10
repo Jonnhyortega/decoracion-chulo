@@ -10,7 +10,6 @@ const desplegarMenu = () => {
 };
 // DESPLEGAR MENU
 
-
 // PRODUCTOS
 
 const productos = [
@@ -60,17 +59,17 @@ function cargarProductos() {
   />
   
   <div class="box-card">
-    <span id="price">$${producto.precio}</span>
-    <span id="descuento">-15%</span>
+  <span id="price">$${producto.precio}</span>
+  <span id="descuento">-15%</span>
   </div>
   
   <span id="description">${producto.nombre}</span>
   
-  <div class="box-card-button">
-    <button onclick="agregarProducto();" id="${producto.id}" class="agregar">Agregar</button>
-    <i class="fa-solid fa-cart-shopping"></i>
+  <div class="box-card-button" onclick="agregarProducto();">
+  <button id="${producto.id}" class="agregar">Agregar</button>
+  <i class="fa-solid fa-cart-shopping"></i>
   </div>
-    `;
+  `;
     productosContainer.append(div);
   });
 }
@@ -78,9 +77,11 @@ function cargarProductos() {
 cargarProductos();
 // PRODUCTOS
 
+// Shopping cart functions
 // Funciones CARRITO de compras
 
-// DESPLEGAR
+// Expand menu
+// DESPLEGAR menu
 const carritoDeCompras = document.getElementById("productos-carrito");
 
 const abrirCarrito = () => {
@@ -90,16 +91,33 @@ const abrirCarrito = () => {
     carritoDeCompras.classList.add("carrito-desplegado");
   }
 };
-// DESPLEGAR
+// DESPLEGAR MENU
+// Expand menu
 
 // Agregar productos
 const carroDeCompras = document.getElementById("productos-agregados");
-const arrayDeProductos = [];
-const agregarProducto = (producto) => {
+const arrayDeProductosAgregados = [];
+let productoAgregado = document.getElementById("producto-agregado");
+const agregarProducto = () => {
+  let numberProducts = document.getElementById("number-products");
+  currentNumber = parseInt(numberProducts.textContent);
+  let newNumber = currentNumber + 1;
+  numberProducts.textContent = newNumber;
   arrayDeProductos.push(productos[producto]);
 };
 
+const sustraerProducto = () => {
+  let numberProducts = document.getElementById("number-products");
+  let currentNumber = parseInt(numberProducts.textContent);
+    if (currentNumber === 0) {
+    return;
+  } else {
+    let newNumber = currentNumber - 1;
+    numberProducts.textContent = newNumber;
+  }
+};
 // Funciones CARRITO de compras
+// Shopping cart functions
 
 // MOSTRAR PASSWORD DE LOGIN
 function mostrarPassword() {
@@ -116,4 +134,3 @@ function mostrarPassword() {
     icon.classList.add("fa-eye");
   }
 }
-

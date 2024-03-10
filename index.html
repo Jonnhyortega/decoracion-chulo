@@ -29,7 +29,7 @@
         />
       </a>
 
-      <a onclick="abrirCarrito();" href="#">
+      <a id="carrito" onclick="abrirCarrito();" href="#">
         <i id="carrito" class="fa-solid fa-cart-shopping"
           ><span id="number-products">0</span></i
         >
@@ -43,15 +43,28 @@
           <span>Subtotal</span>
         </div>
         <div id="productos-agregados">
-          <img
-            id="img-carrito"
-            src="/assets/imgs/productos/divisor-blanco.jpeg"
-            alt=""
-          />
-          <span id="name-item-carrito">Nombre producto</span>
-          <span id="quantity-item-carrito">Cantidad</span>
-          <i id="add-item" class="fa-solid fa-plus"></i>
-          <span id="price-item-carrito">$10.000</span>
+          <div id="producto-agregado">
+            <img
+              id="img-carrito"
+              src="/assets/imgs/productos/divisor-blanco.jpeg"
+              alt="imagen del producto"
+            />
+            <span id="name-item-carrito">Nombre producto</span>
+            <div id="box-adds-items">
+              <i
+                id="add-item"
+                class="fa-solid fa-plus"
+                onclick="agregarProducto()"
+              ></i>
+              <span id="quantity-item-carrito">1</span>
+              <i
+                id="subtract-item"
+                class="fa-solid fa-minus"
+                onclick="sustraerProducto()"
+              ></i>
+            </div>
+            <span id="price-item-carrito">$10.000</span>
+          </div>
         </div>
       </div>
 
