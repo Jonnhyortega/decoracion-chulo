@@ -1,11 +1,11 @@
 @media (max-width: 1350px) {
-  .cards-container {
+  #productos-container {
     grid-template-columns: repeat(3, 1fr);
   }
 }
 
 @media (max-width: 1150px) {
-  .cards-container {
+  #productos-container {
     grid-template-columns: repeat(2, 1fr);
   }
 }
@@ -18,11 +18,21 @@
   #registro-RN {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  #button-show-password {
+    left: 190%;
+    top: -320%;
+  }
 }
 
 @media (max-width: 700px) {
-  .cards-container {
+  #productos-container {
     grid-template-columns: 1fr;
+  }
+
+
+  #title-RN {
+    margin-top: 15%;
   }
 
   footer {
@@ -30,6 +40,7 @@
     flex-direction: column;
   }
 }
+
 
 @media (max-width: 600px) {
   #deco-title {
@@ -43,6 +54,14 @@
 
   #registro-RN {
     grid-template-columns: 1fr;
+  }
+  #title-RN {
+    margin-top: 25%;
+  }
+
+  #button-show-password {
+    left: 80%;
+    top: -320%;
   }
 
   iframe {

@@ -4,10 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/assets/styles.css" />
-    <!-- <link rel="stylesheet" href="/assets/style-contact.css" /> -->
     <link rel="stylesheet" href="/assets/querys.css" />
-    <!-- <link rel="stylesheet" href="/assets/style-login.css" /> -->
-    <!-- <link rel="stylesheet" href="/assets/style-registro.css" /> -->
     <link rel="icon" href="/assets/imgs/chulos-terrazos.png" />
     <link
       rel="stylesheet"
@@ -18,9 +15,12 @@
   </head>
   <body>
     <header>
+      <i
+        id="menu_toggle"
+        onclick="desplegarMenu();"
+        class="fa-solid fa-chart-bar"
+      ></i>
 
-      <i id="menu_toggle"
-      onclick="desplegarMenu();" class="fa-solid fa-chart-bar"></i>
       <a href="/index.html"
         ><img
           id="img-header"
@@ -28,6 +28,32 @@
           alt="Logo Chulos"
         />
       </a>
+
+      <a onclick="abrirCarrito();" href="#">
+        <i id="carrito" class="fa-solid fa-cart-shopping"
+          ><span id="number-products">0</span></i
+        >
+      </a>
+
+      <div id="productos-carrito">
+        <div id="box-description">
+          <span>Producto</span>
+          <span>Nombre</span>
+          <span>Cantidad</span>
+          <span>Subtotal</span>
+        </div>
+        <div id="productos-agregados">
+          <img
+            id="img-carrito"
+            src="/assets/imgs/productos/divisor-blanco.jpeg"
+            alt=""
+          />
+          <span id="name-item-carrito">Nombre producto</span>
+          <span id="quantity-item-carrito">Cantidad</span>
+          <i id="add-item" class="fa-solid fa-plus"></i>
+          <span id="price-item-carrito">$10.000</span>
+        </div>
+      </div>
 
       <nav id="header-nav">
         <ul id="navegador-mobile">
@@ -52,6 +78,7 @@
         <span id="descuento-object">🤯</span>
       </div>
     </header>
+
     <section id="hero">
       <div class="box-hero-left">
         <img src="/assets/imgs/logo-header.png" alt="Logo-hero" />
@@ -104,247 +131,7 @@
         <button id="buscar"><i class="fa-brands fa-searchengin"></i></button>
       </div>
 
-      <div class="cards-container">
-        <div class="card">
-          <img
-            id="producto-img"
-            src="./assets/imgs/escritorio.jpeg"
-            alt="Escritorio"
-          />
-
-          <div class="box-card">
-            <span id="price">$55.000</span>
-            <span id="descuento">-15%</span>
-          </div>
-
-          <span id="description">Escritorio pc.</span>
-
-          <div class="box-card-button">
-            <button id="agregar">Agregar</button>
-            <i class="fa-solid fa-cart-shopping"></i>
-          </div>
-        </div>
-
-        <div class="card">
-          <img
-            id="producto-img"
-            src="./assets/imgs/escritorio.jpeg"
-            alt="Escritorio"
-          />
-
-          <div class="box-card">
-            <span id="price">$55.000</span>
-            <span id="descuento">-15%</span>
-          </div>
-
-          <span id="description">Escritorio pc.</span>
-
-          <div class="box-card-button">
-            <button id="agregar">Agregar</button>
-            <i class="fa-solid fa-cart-shopping"></i>
-          </div>
-        </div>
-
-        <div class="card">
-          <img
-            id="producto-img"
-            src="./assets/imgs/escritorio.jpeg"
-            alt="Escritorio"
-          />
-
-          <div class="box-card">
-            <span id="price">$55.000</span>
-            <span id="descuento">-15%</span>
-          </div>
-
-          <span id="description">Escritorio pc.</span>
-
-          <div class="box-card-button">
-            <button id="agregar">Agregar</button>
-            <i class="fa-solid fa-cart-shopping"></i>
-          </div>
-        </div>
-
-        <div class="card">
-          <img
-            id="producto-img"
-            src="./assets/imgs/escritorio.jpeg"
-            alt="Escritorio"
-          />
-
-          <div class="box-card">
-            <span id="price">$55.000</span>
-            <span id="descuento">-15%</span>
-          </div>
-
-          <span id="description">Escritorio pc.</span>
-
-          <div class="box-card-button">
-            <button id="agregar">Agregar</button>
-            <i class="fa-solid fa-cart-shopping"></i>
-          </div>
-        </div>
-
-        <div class="card">
-          <img
-            id="producto-img"
-            src="./assets/imgs/escritorio.jpeg"
-            alt="Escritorio"
-          />
-
-          <div class="box-card">
-            <span id="price">$55.000</span>
-            <span id="descuento">-15%</span>
-          </div>
-
-          <span id="description">Escritorio pc.</span>
-
-          <div class="box-card-button">
-            <button id="agregar">Agregar</button>
-            <i class="fa-solid fa-cart-shopping"></i>
-          </div>
-        </div>
-
-        <div class="card">
-          <img
-            id="producto-img"
-            src="./assets/imgs/escritorio.jpeg"
-            alt="Escritorio"
-          />
-
-          <div class="box-card">
-            <span id="price">$55.000</span>
-            <span id="descuento">-15%</span>
-          </div>
-
-          <span id="description">Escritorio pc.</span>
-
-          <div class="box-card-button">
-            <button id="agregar">Agregar</button>
-            <i class="fa-solid fa-cart-shopping"></i>
-          </div>
-        </div>
-
-        <div class="card">
-          <img
-            id="producto-img"
-            src="./assets/imgs/escritorio.jpeg"
-            alt="Escritorio"
-          />
-
-          <div class="box-card">
-            <span id="price">$55.000</span>
-            <span id="descuento">-15%</span>
-          </div>
-
-          <span id="description">Escritorio pc.</span>
-
-          <div class="box-card-button">
-            <button id="agregar">Agregar</button>
-            <i class="fa-solid fa-cart-shopping"></i>
-          </div>
-        </div>
-
-        <div class="card">
-          <img
-            id="producto-img"
-            src="./assets/imgs/escritorio.jpeg"
-            alt="Escritorio"
-          />
-
-          <div class="box-card">
-            <span id="price">$55.000</span>
-            <span id="descuento">-15%</span>
-          </div>
-
-          <span id="description">Escritorio pc.</span>
-
-          <div class="box-card-button">
-            <button id="agregar">Agregar</button>
-            <i class="fa-solid fa-cart-shopping"></i>
-          </div>
-        </div>
-
-        <div class="card">
-          <img
-            id="producto-img"
-            src="./assets/imgs/escritorio.jpeg"
-            alt="Escritorio"
-          />
-
-          <div class="box-card">
-            <span id="price">$55.000</span>
-            <span id="descuento">-15%</span>
-          </div>
-
-          <span id="description">Escritorio pc.</span>
-
-          <div class="box-card-button">
-            <button id="agregar">Agregar</button>
-            <i class="fa-solid fa-cart-shopping"></i>
-          </div>
-        </div>
-
-        <div class="card">
-          <img
-            id="producto-img"
-            src="./assets/imgs/escritorio.jpeg"
-            alt="Escritorio"
-          />
-
-          <div class="box-card">
-            <span id="price">$55.000</span>
-            <span id="descuento">-15%</span>
-          </div>
-
-          <span id="description">Escritorio pc.</span>
-
-          <div class="box-card-button">
-            <button id="agregar">Agregar</button>
-            <i class="fa-solid fa-cart-shopping"></i>
-          </div>
-        </div>
-
-        <div class="card">
-          <img
-            id="producto-img"
-            src="./assets/imgs/escritorio.jpeg"
-            alt="Escritorio"
-          />
-
-          <div class="box-card">
-            <span id="price">$55.000</span>
-            <span id="descuento">-15%</span>
-          </div>
-
-          <span id="description">Escritorio pc.</span>
-
-          <div class="box-card-button">
-            <button id="agregar">Agregar</button>
-            <i class="fa-solid fa-cart-shopping"></i>
-          </div>
-        </div>
-
-        <div class="card">
-          <img
-            id="producto-img"
-            src="./assets/imgs/escritorio.jpeg"
-            alt="Escritorio"
-          />
-
-          <div class="box-card">
-            <span id="price">$55.000</span>
-            <span id="descuento">-15%</span>
-          </div>
-
-          <span id="description">Escritorio pc.</span>
-
-          <div class="box-card-button">
-            <button id="agregar">Agregar</button>
-            <i class="fa-solid fa-cart-shopping"></i>
-          </div>
-        </div>
-      </div>
+      <div id="productos-container"></div>
 
       <button id="verMas">Ver más</button>
     </section>
