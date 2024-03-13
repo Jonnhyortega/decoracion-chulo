@@ -47,7 +47,7 @@ const productos = [
 
 const productosContainer = document.querySelector("#productos-container");
 
-function cargarProductos() {
+const cargarProductos = (e) => {
   productos.forEach((producto) => {
     const div = document.createElement("div");
     div.classList.add("card");
@@ -72,7 +72,7 @@ function cargarProductos() {
   `;
     productosContainer.append(div);
   });
-}
+};
 
 cargarProductos();
 // PRODUCTOS
@@ -109,7 +109,7 @@ const agregarProducto = () => {
 const sustraerProducto = () => {
   let numberProducts = document.getElementById("number-products");
   let currentNumber = parseInt(numberProducts.textContent);
-    if (currentNumber === 0) {
+  if (currentNumber === 0) {
     return;
   } else {
     let newNumber = currentNumber - 1;

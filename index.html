@@ -15,6 +15,14 @@
   </head>
   <body>
     <header>
+      <div id="descuento-box" class="text-class-1">
+        <div id="keyframe">
+          <span class="descuento"
+            >💸 15% OFF EFECTIVO 💰15% OFF TRANSFERENCIA</span
+          >
+        </div>
+      </div>
+
       <i
         id="menu_toggle"
         onclick="desplegarMenu();"
@@ -29,18 +37,15 @@
         />
       </a>
 
-      <a id="carrito" onclick="abrirCarrito();" href="#">
-        <i id="carrito" class="fa-solid fa-cart-shopping"
-          ><span id="number-products">0</span></i
-        >
-      </a>
-
       <div id="productos-carrito">
         <div id="box-description">
           <span>Producto</span>
           <span>Nombre</span>
           <span>Cantidad</span>
           <span>Subtotal</span>
+        </div>
+        <div id="box-description-mobiles">
+          <span>productos</span>
         </div>
         <div id="productos-agregados">
           <div id="producto-agregado">
@@ -84,12 +89,11 @@
         </ul>
       </nav>
 
-      <div id="descuento-box" class="text-class-1">
-        <span id="descuento-text"
-          >💸 15% OFF EFECTIVO 💰15% OFF TRANSFERENCIA
-        </span>
-        <span id="descuento-object">🤯</span>
-      </div>
+      <a id="carrito" onclick="abrirCarrito();" href="#">
+        <i class="fa-solid fa-bag-shopping">
+          <span id="number-products">0</span>
+        </i>
+      </a>
     </header>
 
     <section id="hero">
