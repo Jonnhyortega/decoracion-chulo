@@ -12,7 +12,7 @@
 }
 @media (max-width: 853px) {
   header {
-    top: 1.5rem;
+    top: 1.2rem;
   }
 
   body {
@@ -23,9 +23,6 @@
 @media (max-width: 820px) {
   body {
     padding: 0 0 6rem 0;
-  }
-  header {
-    top: 1.5rem;
   }
 
   #title-RN {
@@ -106,7 +103,7 @@
   header {
     width: 100vh;
     grid-template-columns: 1fr 1fr 1fr;
-    /* padding: 0.3rem 15.5rem; */
+    top: 1.6rem;
   }
 
   #navegador-mobile.desplegado {
@@ -161,7 +158,6 @@
   header {
     width: 100vh;
     grid-template-columns: 1fr 1fr 1fr;
-    /* padding: 2rem 15rem 1rem 15rem; */
   }
 
   #navegador-mobile {
@@ -193,26 +189,18 @@
     padding: 0 0 1rem 0;
   }
 }
-
-@media (max-width: 400px) {
+@media (max-width: 413px) {
   header {
-    width: 100vh;
-    grid-template-columns: 1fr 1fr 1fr;
-    padding: 1rem 6rem 1rem 6rem;
+    top: 1.5rem;
+    padding: 0.5rem 4rem 0.5rem 4rem;
   }
 
-  #descuento-box {
+  .descuento {
     font-size: 0.7rem;
   }
 }
 
 @media (max-width: 375px) {
-  header {
-    width: 100vh;
-    grid-template-columns: 1fr 1fr 1fr;
-    padding: 1rem 2rem 1rem 2rem;
-  }
-
   #navegador-mobile.desplegado {
     transition: 0.6s all;
     left: 12%;
@@ -224,21 +212,22 @@
 }
 
 @media (max-width: 360px) {
-  header {
-    width: 100vh;
-    grid-template-columns: 1fr 1fr 1fr;
-    padding: 1rem 11rem 1rem 11rem;
-  }
   #navegador-mobile.desplegado {
     transition: 0.6s all;
     left: 8%;
   }
 }
 
+@media (max-width: 330px) {
+  header {
+    padding: 0.5rem 6rem 0.5rem 6rem;
+  }
+}
+
 @media (max-width: 280px) {
   header {
     top: 1rem;
-    padding: 0 6rem 0 6rem;
+    padding: 0.8rem 7rem 0.8rem 7rem;
   }
 
   #decuento {
