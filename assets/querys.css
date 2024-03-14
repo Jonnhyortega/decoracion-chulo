@@ -10,9 +10,17 @@
     grid-template-columns: repeat(2, 1fr);
   }
 }
+
+@media (max-width: 912px) {
+  header {
+    padding: 1rem 1rem;
+    top: 1rem;
+  }
+}
+
 @media (max-width: 853px) {
   header {
-    top: 1.2rem;
+    top: 1rem;
   }
 
   body {
@@ -159,6 +167,7 @@
     width: 100vh;
     grid-template-columns: 1fr 1fr 1fr;
     padding: 0.5rem 14rem 0.5rem 14rem;
+    top: 1rem;
   }
 
   #navegador-mobile {
@@ -169,7 +178,7 @@
   }
 
   #navegador-mobile.desplegado {
-    left: 5%;
+    left: 13rem;
   }
 
   #descuento-box {
@@ -195,23 +204,27 @@
 @media (max-width: 414px) {
   header {
     padding: 0.5rem 14rem 0.5rem 14rem;
-    top: 1.5rem;
+    top: 1rem;
   }
 
   .descuento {
     font-size: 0.7rem;
   }
+
+  #navegador-mobile.desplegado {
+    left: 12rem;
+  }
 }
 
 @media (max-width: 375px) {
   header {
-    padding: 0.5rem 15rem 0.5rem 15rem;
+    padding: 0.5rem 12rem 0.5rem 12rem;
     top: 1.5rem;
   }
 
   #navegador-mobile.desplegado {
     transition: 0.6s all;
-    left: 12%;
+    left: 14%;
   }
 
   #number-products {
@@ -221,13 +234,13 @@
 
 @media (max-width: 360px) {
   header {
-    padding: 0.5rem 17rem 0.5rem 17rem;
-    top: 1.5rem;
+    padding: 0.5rem 12rem 0.5rem 12rem;
+    top: 1.2rem;
   }
 
   #navegador-mobile.desplegado {
     transition: 0.6s all;
-    left: 8%;
+    left: 11.5rem;
   }
 }
 
@@ -244,21 +257,23 @@
 
 @media (max-width: 280px) {
   header {
-    padding: 0.5rem 19rem 0.5rem 19rem;
+    padding: 0.5rem 12rem 0.5rem 12rem;
   }
 
   #decuento {
     width: 100%;
   }
+
   #navegador-mobile {
-    padding: 1rem 6rem 1rem 0.3rem;
+    padding: 1rem 7rem 1rem 0.3rem;
     align-items: start;
     width: 10rem;
   }
 
   #navegador-mobile.desplegado {
-    left: 22%;
+    left: 28%;
   }
+
   #productos h2,
   #background-registroNew h2 {
     font-size: 2rem;
