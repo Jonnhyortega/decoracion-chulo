@@ -44,10 +44,58 @@
           <span>Cantidad</span>
           <span>Subtotal</span>
         </div>
+
         <div id="box-description-mobiles">
-          <span>productos</span>
+          <span>Productos</span>
         </div>
+
         <div id="productos-agregados">
+          <div id="producto-agregado">
+            <img
+              id="img-carrito"
+              src="/assets/imgs/productos/divisor-blanco.jpeg"
+              alt="imagen del producto"
+            />
+            <span id="name-item-carrito">Nombre producto</span>
+            <div id="box-adds-items">
+              <i
+                id="add-item"
+                class="fa-solid fa-plus"
+                onclick="agregarProducto()"
+              ></i>
+              <span id="quantity-item-carrito">1</span>
+              <i
+                id="subtract-item"
+                class="fa-solid fa-minus"
+                onclick="sustraerProducto()"
+              ></i>
+            </div>
+            <span id="price-item-carrito">$10.000</span>
+          </div>
+
+          <div id="producto-agregado">
+            <img
+              id="img-carrito"
+              src="/assets/imgs/productos/divisor-blanco.jpeg"
+              alt="imagen del producto"
+            />
+            <span id="name-item-carrito">Nombre producto</span>
+            <div id="box-adds-items">
+              <i
+                id="add-item"
+                class="fa-solid fa-plus"
+                onclick="agregarProducto()"
+              ></i>
+              <span id="quantity-item-carrito">1</span>
+              <i
+                id="subtract-item"
+                class="fa-solid fa-minus"
+                onclick="sustraerProducto()"
+              ></i>
+            </div>
+            <span id="price-item-carrito">$10.000</span>
+          </div>
+
           <div id="producto-agregado">
             <img
               id="img-carrito"
@@ -89,11 +137,13 @@
         </ul>
       </nav>
 
-      <a id="carrito" onclick="abrirCarrito();" href="#">
-        <i class="fa-solid fa-bag-shopping">
-          <span id="number-products">0</span>
-        </i>
-      </a>
+      <i
+        id="carrito"
+        onclick="abrirCarrito();"
+        class="fa-solid fa-bag-shopping"
+      >
+        <span id="number-products">0</span>
+      </i>
     </header>
 
     <section id="hero">

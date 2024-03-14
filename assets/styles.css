@@ -49,14 +49,16 @@ header {
   grid-template-columns: 1fr 1fr 1fr;
   justify-items: center;
   align-items: center;
-  /* overflow: hidden; */
   background: linear-gradient(to bottom, hsl(20, 50%, 70%), hsl(0, 73%, 90%));
 }
-/* carrito */
+
+/* SHOPPING CART*/
+/* CARRO DE COMPRAS */
 #carrito {
   font-size: 1.2rem;
-  padding: 1rem;
+  padding: 1.2rem;
   color: black;
+  cursor: pointer;
 }
 
 #number-products {
@@ -72,7 +74,6 @@ header {
   font-family: var(--texto-montserrat);
   gap: 10rem;
   border: 1px solid rgba(0, 0, 0, 0.298);
-  border-radius: 5px;
   position: absolute;
   overflow-y: visible;
   background: linear-gradient(
@@ -122,7 +123,6 @@ header {
   align-items: center;
   gap: 2rem;
   padding: 1rem;
-  border-radius: 0.5rem;
   /* border: 3px solid rgba(0, 0, 0, 0.418); */
 }
 
@@ -164,7 +164,8 @@ header {
   letter-spacing: 0.1rem;
 }
 
-/* carrito */
+/* SHOPPING CART*/
+/* CARRO DE COMPRAS */
 
 #img-header {
   width: 70px;
@@ -187,7 +188,7 @@ header {
   z-index: -1;
   display: flex;
   flex-direction: column;
-  justify-content: end;
+  align-items: end;
   gap: 40px;
   position: absolute;
   background: linear-gradient(
@@ -196,17 +197,14 @@ header {
     hsl(0, 62%, 84%),
     hsl(0, 0%, 100%)
   );
-  /* top: -370%; */
   top: 100%;
   left: -100%;
   width: 20%;
-  padding: 20px 150px 30px 150px;
   text-decoration: none;
   list-style: none;
   transition: 0.6s all;
-  border-radius: 0 0 25px 0;
-  /* border-bottom: 5px solid rgba(0, 0, 0, 0.24); */
   box-shadow: 0px 1px 5px 1px black;
+  padding: 0 1rem 0 0;
 }
 
 #navegador-mobile.desplegado {
