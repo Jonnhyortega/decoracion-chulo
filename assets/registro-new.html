@@ -1,30 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <head>
-      <meta charset="UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <link rel="stylesheet" href="/assets/style-registro.css" />
-      <link rel="stylesheet" href="/assets/styles.css" />
-      <link rel="stylesheet" href="/assets/querys.css" />
-      <!-- <link rel="stylesheet" href="/assets/style-login.css" /> -->
-      <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-      />
-      <link rel="icon" href="/assets/imgs/chulos-terrazos.png" />
-      <link rel="icon" href="/assets/imgs/logo-header.png" />
-      <title>Registtro</title>
-    </head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/assets/style-registro.css" />
+    <link rel="stylesheet" href="/assets/styles.css" />
+    <link rel="stylesheet" href="/assets/querys.css" />
+    <!-- <link rel="stylesheet" href="/assets/style-login.css" /> -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="icon" href="/assets/imgs/chulos-terrazos.png" />
+    <link rel="icon" href="/assets/imgs/logo-header.png" />
+    <title>Registtro</title>
   </head>
 
   <body id="body-RN">
     <header>
+      <div id="descuento-box" class="text-class-1">
+        <div id="keyframe">
+          <span class="descuento"
+            >💸 15% OFF EFECTIVO 💰15% OFF TRANSFERENCIA</span
+          >
+        </div>
+      </div>
+
       <i
         id="menu_toggle"
         onclick="desplegarMenu();"
         class="fa-solid fa-chart-bar"
       ></i>
+
       <a href="/index.html"
         ><img
           id="img-header"
@@ -41,7 +48,7 @@
           </li>
           <li id="header-li"><a href="#section-two">Nosotros</a></li>
           <li id="header-li">
-            <a href="/assets/registroNew.html">Registrarse</a>
+            <a href="/assets/registro-new.html">Registrarse</a>
           </li>
           <li id="header-li">
             <a href="/assets/login.html">Acceder</a>
@@ -49,25 +56,50 @@
         </ul>
       </nav>
 
-      <div id="descuento-box" class="text-class-1">
-        <span id="descuento-text"
-          >💸 15% OFF EFECTIVO 💰15% OFF TRANSFERENCIA
-        </span>
-        <span id="descuento-object">🤯</span>
-      </div>
+      <i
+        id="carrito"
+        onclick="abrirCarrito();"
+        class="fa-solid fa-bag-shopping"
+      >
+        <span id="number-products">0</span>
+      </i>
     </header>
 
     <h3 id="title-RN">Complete los siguientes datos:</h3>
 
     <form id="registro-RN" action="registro">
-     
-        <input class="input-RN" type="text" id="name-RN" required placeholder="Nombre" />
+      <input
+        class="input-RN"
+        type="text"
+        id="name-RN"
+        required
+        placeholder="Nombre"
+      />
 
-      <input class="input-RN" type="text" id="adress-RN" required placeholder="Apellido" />
+      <input
+        class="input-RN"
+        type="text"
+        id="adress-RN"
+        required
+        placeholder="Apellido"
+      />
 
-      <input class="input-RN" type="number" id="phone-RN" required max="10" placeholder="Telefono" />
+      <input
+        class="input-RN"
+        type="number"
+        id="phone-RN"
+        required
+        max="10"
+        placeholder="Telefono"
+      />
 
-      <select class="input-RN" name="lugar" id="lugar" required placeholder="Seleccione lugar de residencia">
+      <select
+        class="input-RN"
+        name="lugar"
+        id="lugar"
+        required
+        placeholder="Seleccione lugar de residencia"
+      >
         <option disabled>Seleccione lugar de residencia</option>
         <option value="caba">Ciudad Autonoma de Buenos Aires</option>
         <option value="buenos-aires">Buenos Aires</option>
@@ -95,11 +127,28 @@
         <option value="tucuman">Tucumán</option>
       </select>
 
-      <input class="input-RN" type="email" id="email-RN" required placeholder="Correo electrónico" />
+      <input
+        class="input-RN"
+        type="email"
+        id="email-RN"
+        required
+        placeholder="Correo electrónico"
+      />
 
-      <input class="input-RN" type="number" id="postal-code-RN" required placeholder="Código postal" />
+      <input
+        class="input-RN"
+        type="number"
+        id="postal-code-RN"
+        required
+        placeholder="Código postal"
+      />
 
-      <input class="input-RN" type="text" id="direccion-RN" placeholder="Direccion" />
+      <input
+        class="input-RN"
+        type="text"
+        id="direccion-RN"
+        placeholder="Direccion"
+      />
 
       <input
         class="input-RN"
@@ -132,10 +181,10 @@
               alt="Logo Chulos"
             />
           </a>
-          <li><a href="/index.html">Inicio</a></li>
+          <!-- <li><a href="/index.html">Inicio</a></li> -->
           <li><a href="#productos">Productos</a></li>
           <li><a href="#background-registroNew">Contactanos</a></li>
-          <li><a href="/assets/registroNew.html">Registrarse</a></li>
+          <li><a href="/assets/registro-new.html">Registrarse</a></li>
           <li>
             <a href="/assets/login.html"
               ><span>Iniciar</span> <span>Sesión</span></a

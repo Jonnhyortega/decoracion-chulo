@@ -16,16 +16,8 @@
   box-sizing: border-box;
 }
 
-#background-registro-login {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 4rem;
-  width: 100%;
-  margin-top: 10%;
-}
-
 #registro-login {
+  margin-top: 20%;
   gap: 1rem;
   width: 100%;
   display: flex;
@@ -33,9 +25,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* gap: 1rem; */
-  /* padding: 50px; */
-  /* border: 1px solid black; */
 }
 
 #title-login {
@@ -48,14 +37,12 @@
 #password-login {
   padding: 1rem;
   border-radius: 10px solid;
-}
-
-#password-login {
-  width: 65%;
+  width: 10rem;
 }
 
 .box-password {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 0.3rem;
@@ -63,6 +50,8 @@
 }
 
 #button-show-password {
+  top: 50%;
+  left: 200%;
   border-radius: 30px;
   cursor: pointer;
   background-color: var(--main-color);
@@ -73,7 +62,6 @@
 }
 
 #button-login {
-  width: 5%;
   padding: 0.4rem;
   font-family: var(--texto-general);
   font-weight: 700;
@@ -88,4 +76,12 @@
 #button-login:hover {
   background-color: white;
   box-shadow: 1px 1px 10px 1px rgba(0, 0, 0);
+}
+
+#carrito {
+  box-shadow: 1px 1px 5px 1px grey;
+}
+
+#carrito:hover {
+  box-shadow: 1px 1px 5px 1px grey;
 }
