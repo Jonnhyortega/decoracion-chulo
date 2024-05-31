@@ -1,136 +1,145 @@
-// DESPLEGAR MENU
-const nav = document.getElementById("navegador-mobile");
-
-const desplegarMenu = () => {
-  if (nav.classList.contains("desplegado")) {
-    nav.classList.remove("desplegado");
-  } else {
-    nav.classList.add("desplegado");
-  }
-};
-// DESPLEGAR MENU
-
-// PRODUCTOS
-
-const productos = [
+const products = [
   {
     id: 1,
-    nombre: "Botiquin Marron",
-    precio: 1000,
-    imagen: "/assets/imgs/productos/botiquin-marron.jpeg",
+    name: "Botiquin Marron",
+    price: 1000,
+    image: "/assets/imgs/productos/botiquin-marron.jpeg",
   },
   {
     id: 2,
-    nombre: "Botiquin Blanco",
-    precio: 1000,
-    imagen: "/assets/imgs/productos/botiquin-blanco.jpeg",
+    name: "Botiquin Blanco",
+    price: 1000,
+    image: "/assets/imgs/productos/botiquin-blanco.jpeg",
   },
   {
     id: 3,
-    nombre: "Divisor Blanco",
-    precio: 1000,
-    imagen: "/assets/imgs/productos/divisor-blanco.jpeg",
+    name: "Divisor Blanco",
+    price: 1000,
+    image: "/assets/imgs/productos/divisor-blanco.jpeg",
   },
   {
     id: 4,
-    nombre: "Divisor Opaco",
-    precio: 1000,
-    imagen: "/assets/imgs/productos/divisor-opaco.jpeg",
+    name: "Divisor Opaco",
+    price: 1000,
+    image: "/assets/imgs/productos/divisor-opaco.jpeg",
   },
   {
     id: 5,
-    nombre: "Divisor Opaco plastico",
-    precio: 1000,
-    imagen: "/assets/imgs/productos/divisor-opaco-plastico.jpeg",
+    name: "Divisor Opaco plastico",
+    price: 3000,
+    image: "/assets/imgs/productos/divisor-opaco-plastico.jpeg",
+  },
+  {
+    id: 6,
+    name: "Divisor Opaco ",
+    price: 1020,
+    image: "/assets/imgs/productos/divisor-opaco.jpeg",
+  },
+  {
+    id: 7,
+    name: "Divisor vidrio",
+    price: 1000,
+    image: "/assets/imgs/productos/divisor-opaco-plastico.jpeg",
+  },
+  {
+    id: 8,
+    name: "Respaldo cama",
+    price: 10000,
+    image: "/assets/imgs/productos/respaldo-cama.jpeg",
   },
 ];
+const productsContainer = document.querySelector("#productos-container");
+let arrayProducts = JSON.parse(localStorage.getItem("arrayProducts")) || [];
 
-const productosContainer = document.querySelector("#productos-container");
+const cargarProductos = () => {
+  products.map((p) => (productsContainer.innerHTML += `${template(p)}`));
+  addEventsButtonsAdd();
+};
 
-const cargarProductos = (e) => {
-  productos.forEach((producto) => {
-    const div = document.createElement("div");
-    div.classList.add("card");
-    div.innerHTML = `
-    <img
-    id="producto-img"
-    src="${producto.imagen}"
-    alt="${producto.nombre}"
-  />
-  
-  <div class="box-card">
-  <span id="price">$${producto.precio}</span>
-  <span id="descuento">-15%</span>
-  </div>
-  
-  <span id="description">${producto.nombre}</span>
-  
-  <div class="box-card-button" onclick="agregarProducto();">
-  <button id="${producto.id}" class="agregar">Agregar</button>
-  <i class="fa-solid fa-cart-shopping"></i>
-  </div>
+function saveToLs(){
+localStorage.setItem("arrayProducts", JSON.stringify(arrayProducts))
+}
+
+function template(product) {
+  return `
+  <div class="card">
+      <img
+      id="producto-img"
+      src="${product.image}"
+      alt="${product.name}"
+      />
+
+      <div class="box-card">
+      <span id="price">$${product.price}</span>
+      <span id="descuento">-15%</span>
+      </div>
+
+      <span id="description">${product.name}</span>
+
+      <div class="box-card-button">
+      <button id="${product.id}" class="agregar"><i class="fa-solid fa-cart-shopping"></i>
+      </button>
+</div>
+`;
+}
+
+function templateCart(product) {
+  return `
+  <div id="producto-agregado">
+                      <img
+                        id="img-carrito"
+                        src="${product.image}"
+                        alt="imagen del producto"
+                      />
+                      <span id="name-item-carrito">${product.name}</span>
+                      <div id="box-adds-items">
+                        <i
+                          id="add-item"
+                          class="fa-solid fa-plus"
+                        ></i>
+                        <span id="quantity-item-carrito">1</span>
+                        <i
+                          id="subtract-item"
+                          class="fa-solid fa-minus"></i>
+                      </div>
+                      <span id="price-item-carrito">${product.price}</span>
+                    </div>
   `;
-    productosContainer.append(div);
+}
+
+function addEventsButtonsAdd() {
+  let btn = document.querySelectorAll(".agregar");
+  btn.forEach((b) => {
+    b.addEventListener("click", (e) => {
+      let product = products.find((p) => p.id == e.currentTarget.id);
+      console.log(product)
+      let existingMovie = arrayProducts.some(p => p.id == product.id)
+      if(existingMovie){
+        console.log("ya existe en el array esta pelicula")
+      }else {
+        arrayProducts.push(product)
+        saveToLs()
+        console.log(`Agregado ${arrayProducts}`)
+      }
+    });
   });
-};
+}
 
-cargarProductos();
-// PRODUCTOS
-
-// Shopping cart functions
-// Funciones CARRITO de compras
-
-// Expand menu
-// DESPLEGAR menu
-const carritoDeCompras = document.getElementById("productos-carrito");
-
-const abrirCarrito = () => {
-  if (carritoDeCompras.classList.contains("carrito-desplegado")) {
-    carritoDeCompras.classList.remove("carrito-desplegado");
+function renderProductsCart(){
+  let productosAgregados = document.querySelector("#productos-agregados")
+  let dropdownMenu = document.querySelector(".dropdown-menu")
+  let containerTotal = document.querySelector("#total-container")
+  if(arrayProducts.length > 0) {
+    productosAgregados.innerHTML = arrayProducts.map(p => templateCart(p)).join('');
+    containerTotal.textContent = `Total $ ${TOTAL}`
   } else {
-    carritoDeCompras.classList.add("carrito-desplegado");
-  }
-};
-// DESPLEGAR MENU
-// Expand menu
-
-// Agregar productos
-const carroDeCompras = document.getElementById("productos-agregados");
-const arrayDeProductosAgregados = [];
-let productoAgregado = document.getElementById("producto-agregado");
-const agregarProducto = () => {
-  let numberProducts = document.getElementById("number-products");
-  currentNumber = parseInt(numberProducts.textContent);
-  let newNumber = currentNumber + 1;
-  numberProducts.textContent = newNumber;
-  arrayDeProductos.push(productos[producto]);
-};
-
-const sustraerProducto = () => {
-  let numberProducts = document.getElementById("number-products");
-  let currentNumber = parseInt(numberProducts.textContent);
-  if (currentNumber === 0) {
-    return;
-  } else {
-    let newNumber = currentNumber - 1;
-    numberProducts.textContent = newNumber;
-  }
-};
-// Funciones CARRITO de compras
-// Shopping cart functions
-
-// MOSTRAR PASSWORD DE LOGIN
-function mostrarPassword() {
-  var passwordInput = document.getElementById("password-login");
-  var icon = document.getElementById("button-show-password");
-
-  if (passwordInput.type === "password") {
-    passwordInput.type = "text";
-    icon.classList.remove("fa-eye");
-    icon.classList.add("fa-eye-slash");
-  } else {
-    passwordInput.type = "password";
-    icon.classList.remove("fa-eye-slash");
-    icon.classList.add("fa-eye");
+    document.querySelector(".dropdown-menu").innerHTML = `Carrito vacio`
   }
 }
+
+document.addEventListener("DOMContentLoaded", cargarProductos);
+document.addEventListener("DOMContentLoaded", renderProductsCart);
+document.querySelector(".dropdown-menu").addEventListener("click", (e) => {
+  e.stopPropagation()
+})
+console.log(arrayProducts)

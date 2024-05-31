@@ -1,0 +1,130 @@
+<header>
+    <div id="descuento-box" class="text-class-1">
+      <div id="keyframe">
+        <span class="descuento"
+          >💸 15% OFF EFECTIVO 💰15% OFF TRANSFERENCIA</span
+        >
+      </div>
+    </div>
+
+    <i
+      id="menu_toggle"
+      onclick="desplegarMenu();"
+      class="fa-solid fa-chart-bar"
+    ></i>
+
+    <a href="/index.html"
+      ><img
+        id="img-header"
+        src="/assets/imgs/logo-header.png"
+        alt="Logo Chulos"
+      />
+    </a>
+
+    <div id="productos-carrito">
+      <div id="box-description">
+        <span>Producto</span>
+        <span>Nombre</span>
+        <span>Cantidad</span>
+        <span>Subtotal</span>
+      </div>
+
+      <div id="box-description-mobiles">
+        <span>Productos</span>
+      </div>
+
+      <div id="productos-agregados">
+        <div id="producto-agregado">
+          <img
+            id="img-carrito"
+            src="/assets/imgs/productos/divisor-blanco.jpeg"
+            alt="imagen del producto"
+          />
+          <span id="name-item-carrito">Nombre producto</span>
+          <div id="box-adds-items">
+            <i
+              id="add-item"
+              class="fa-solid fa-plus"
+              onclick="agregarProducto()"
+            ></i>
+            <span id="quantity-item-carrito">1</span>
+            <i
+              id="subtract-item"
+              class="fa-solid fa-minus"
+              onclick="sustraerProducto()"
+            ></i>
+          </div>
+          <span id="price-item-carrito">$10.000</span>
+        </div>
+
+        <div id="producto-agregado">
+          <img
+            id="img-carrito"
+            src="/assets/imgs/productos/divisor-blanco.jpeg"
+            alt="imagen del producto"
+          />
+          <span id="name-item-carrito">Nombre producto</span>
+          <div id="box-adds-items">
+            <i
+              id="add-item"
+              class="fa-solid fa-plus"
+              onclick="agregarProducto()"
+            ></i>
+            <span id="quantity-item-carrito">1</span>
+            <i
+              id="subtract-item"
+              class="fa-solid fa-minus"
+              onclick="sustraerProducto()"
+            ></i>
+          </div>
+          <span id="price-item-carrito">$10.000</span>
+        </div>
+
+        <div id="producto-agregado">
+          <img
+            id="img-carrito"
+            src="/assets/imgs/productos/divisor-blanco.jpeg"
+            alt="imagen del producto"
+          />
+          <span id="name-item-carrito">Nombre producto</span>
+          <div id="box-adds-items">
+            <i
+              id="add-item"
+              class="fa-solid fa-plus"
+            ></i>
+            <span id="quantity-item-carrito">1</span>
+            <i
+              id="subtract-item"
+              class="fa-solid fa-minus"
+              onclick="sustraerProducto()"
+            ></i>
+          </div>
+          <span id="price-item-carrito">$10.000</span>
+        </div>
+      </div>
+    </div> 
+
+    <nav id="header-nav">
+      <ul id="navegador-mobile">
+        <li id="header-li"><a href="#productos">Productos</a></li>
+        <li id="header-li">
+          <a href="#background-registroNew">Contactanos</a>
+        </li>
+        <li id="header-li"><a href="#section-two">Nosotros</a></li>
+        <li id="header-li">
+          <a href="/assets/modules/registro-new.html">Registrarse</a>
+        </li>
+        <li id="header-li">
+          <a href="/assets/login.html">Acceder</a>
+        </li>
+      </ul>
+    </nav>
+
+    <i
+      id="carrito"
+      onclick="abrirCarrito();"
+      class="fa-solid fa-bag-shopping"
+    >
+      <span id="number-products">0</span>
+    </i>
+  </header>
