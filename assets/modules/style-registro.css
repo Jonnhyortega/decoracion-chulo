@@ -2,11 +2,13 @@
 
 :root {
   /* FONTS */
+  --texto-montserrat: "Montserrat", sans-serif;
   --texto-general: "Barlow Condensed", sans-serif;
   --text-titulo: "IBM Plex Mono", monospace;
   /* COLORS */
-  --main-color: hsl(20, 90%, 88%);
-  --secondary-color: hsl(29, 62%, 78%);
+  /* --main-color: hsl(#008f4c, 100%, 70%); */
+  --main-color: #008f4c;
+  --secondary-color: #17c775;
 }
 
 * {
@@ -21,69 +23,54 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-color: var(--secondary-color);
 }
 
 #title-RN {
   font-size: 2rem;
-  font-family: var(--texto-general);
-  margin-top: 12%;
+  margin-top: 5rem;
+  font-family: var(--texto-montserrat);
+  margin-bottom: 1rem;
+  margin: 5rem auto;
 }
 
 #registro-RN {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1fr 1fr;
+  flex-wrap: wrap;
   gap: 1.5rem;
   align-items: center;
   justify-content: center;
+  
 }
 
-#label-RN {
-  border-radius: 5px;
-  display: flex;
-  flex-direction: column;
-  background-color: var(--main-color);
-  padding: 1rem;
-  font-family: var(--texto-general);
-  font-size: 1.5rem;
-  gap: 1rem;
-}
 
 .input-RN {
   padding: 0.6rem;
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 5px;
+  color: white;
+  font-weight: 800;
 }
 
-#label-RN-PW {
-  display: flex;
-  flex-direction: column;
-  background-color: var(--main-color);
-  padding: 1rem;
-  font-family: var(--texto-general);
-  font-size: 1.5rem;
-  gap: 1rem;
+.input-RN:hover {
+  box-shadow: 1px 1px 4px 1px black;
 }
 
-#button-show-password {
-  width: 1rem;
-  position: relative;
-  bottom: 0;
-  left: -3rem;
-  font-size: 1rem;
-  cursor: pointer;
-  border-radius: 35px;
+.input-RN::placeholder {
+  color: white;
 }
 
-#button-show-password:hover {
-  background-color: var(--main-color);
-}
 
 #form-button-RN {
-  width: 20%;
+  margin-bottom: 2rem;
   padding: 0.4rem;
   font-family: var(--texto-general);
   font-weight: 700;
   cursor: pointer;
   font-size: 1rem;
-  border: none;
+  border: 1px solid white;
   border-radius: 2px;
   box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.335);
   background-color: var(--main-color);
@@ -94,12 +81,25 @@
   box-shadow: 1px 1px 10px 1px rgba(0, 0, 0);
 }
 
-#carrito {
-  box-shadow: 1px 1px 5px 1px grey;
+
+#lugar:focus {
+  border-color: 2px solid var(--main-color);
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  outline: none;
 }
 
-#carrito:hover {
-  box-shadow: 1px 1px 5px 1px grey;
+#lugar:active {
+  border-color: var(--main-color);
+  box-shadow: 0 0 5px var(--main-color);
+  outline: none;
 }
 
+#lugar:hover{
+  background-color: var(--main-color);
+  color: white;
+  cursor: pointer;
+}
 
+#lugar > option:hover {
+  background-color: gold;
+}

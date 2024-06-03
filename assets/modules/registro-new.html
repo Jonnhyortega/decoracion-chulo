@@ -3,67 +3,87 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
     <link rel="stylesheet" href="/assets/modules/style-registro.css" />
     <link rel="stylesheet" href="/assets/modules/styles.css" />
     <link rel="stylesheet" href="/assets/modules/querys.css" />
-    <!-- <link rel="stylesheet" href="/assets/style-login.css" /> -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
     <link rel="icon" href="/assets/imgs/chulos-terrazos.png" />
     <link rel="icon" href="/assets/imgs/logo-header.png" />
-    <title>Registtro</title>
+    <title>Registro</title>
   </head>
 
   <body id="body-RN">
-    <header>
-      <div id="descuento-box" class="text-class-1">
-        <div id="keyframe">
-          <span class="descuento"
-            >💸 15% OFF EFECTIVO 💰15% OFF TRANSFERENCIA</span
-          >
+    <nav
+      id="nav"
+      class="navbar navbar-expand-lg bg-body-tertiary w-100 fixed-top"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/index.html"
+          ><img
+            id="img-header"
+            src="/assets/imgs/logo-header.png"
+            alt="Logo Chulos"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" <a class="navbar-brand" href="/index.html"
+                >Contactanos</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" <a class="navbar-brand" href="/index.html"
+                >Nosotros</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/assets/modules/registro-new.html"
+                >Registrarse</a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="/assets/modules/login.html">Acceder</a>
+            </li>
+            <!-- <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+              <i class="fa-solid fa-cart-arrow-down"></i>
+              <small id="numberProducts"></small>
+            </a>
+              <div class="dropdown-menu">
+                
+
+              </div>
+            </li> -->
+          </ul>
         </div>
       </div>
-
-      <i
-        id="menu_toggle"
-        onclick="desplegarMenu();"
-        class="fa-solid fa-chart-bar"
-      ></i>
-
-      <a href="/index.html"
-        ><img
-          id="img-header"
-          src="/assets/imgs/logo-header.png"
-          alt="Logo Chulos"
-        />
-      </a>
-
-      <nav id="header-nav">
-        <ul id="navegador-mobile">
-          <li id="header-li"><a href="#productos">Productos</a></li>
-          <li id="header-li">
-            <a href="#background-registroNew">Contactanos</a>
-          </li>
-          <li id="header-li"><a href="#section-two">Nosotros</a></li>
-          <li id="header-li">
-            <a href="/assets/modules/registro-new.html">Registrarse</a>
-          </li>
-          <li id="header-li">
-            <a href="/assets/modules/login.html">Acceder</a>
-          </li>
-        </ul>
-      </nav>
-
-      <i
-        id="carrito"
-        onclick="abrirCarrito();"
-        class="fa-solid fa-bag-shopping"
-      >
-        <span id="number-products">0</span>
-      </i>
-    </header>
+    </nav>
 
     <h3 id="title-RN">Complete los siguientes datos:</h3>
 
@@ -73,15 +93,7 @@
         type="text"
         id="name-RN"
         required
-        placeholder="Nombre"
-      />
-
-      <input
-        class="input-RN"
-        type="text"
-        id="adress-RN"
-        required
-        placeholder="Apellido"
+        placeholder="Nombre y apellido"
       />
 
       <input
@@ -158,40 +170,30 @@
         min="8"
         required
         placeholder="Ingrese contraseña"
-      />
-
-      <i
-        id="button-show-password"
-        onclick="mostrarPassword()"
-        class="fa-regular fa-eye"
-      ></i>
+      >
+      <input
+        class="input-RN"
+        type="password-two"
+        id="password-login"
+        max="8"
+        min="8"
+        required
+        placeholder="Ingrese contraseña"
+      >
 
       <div class="passwordMostrado"></div>
     </form>
 
-    <button id="form-button-RN">Registrarse</button>
+    <button id="form-button-RN"><i class="fa-solid fa-id-card"></i></button>
 
-    <footer class="flex-column-for-querys">
-      <nav id="footer-nav">
-        <ul id="footer-nav-ul">
-          <a href="/index.html"
-            ><img
-              class="container-img"
-              src="/assets/imgs/logo-header.png"
-              alt="Logo Chulos"
-            />
-          </a>
-          <!-- <li><a href="/index.html">Inicio</a></li> -->
-          <li><a href="#productos">Productos</a></li>
-          <li><a href="#background-registroNew">Contactanos</a></li>
-          <li><a href="/assets/modules/registro-new.html">Registrarse</a></li>
-          <li>
-            <a href="/assets/modules/login.html"
-              ><span>Iniciar</span> <span>Sesión</span></a
-            >
-          </li>
-        </ul>
-      </nav>
+    <footer>
+
+      <div class="footer-info">
+        <a href="">Cómo comprar</a>
+        <a href="">Formas de entrega</a>
+        <a href="">Horarios de atencion</a>
+        <a href="">Postventa</a>
+      </div>
 
       <div class="maps">
         <span>Villa Lugano</span>
@@ -226,14 +228,15 @@
         >
       </div>
 
-      <div class="footer-info">
-        <a href="">Cómo comprar</a>
-        <a href="">Formas de entrega</a>
-        <a href="">Horarios de atencion</a>
-        <a href="">Postventa</a>
+      <div id="descuento-box" class="text-class-1">
+        <div id="keyframe">
+          <span class="descuento"
+            >💸 15% OFF EFECTIVO 💰15% OFF TRANSFERENCIA</span
+          >
+        </div>
       </div>
     </footer>
-    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="/assets/app.js"></script>
   </body>
 </html>

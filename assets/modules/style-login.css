@@ -2,11 +2,13 @@
 
 :root {
   /* FONTS */
+  --texto-montserrat: "Montserrat", sans-serif;
   --texto-general: "Barlow Condensed", sans-serif;
   --text-titulo: "IBM Plex Mono", monospace;
   /* COLORS */
-  --main-color: hsl(20, 90%, 88%);
-  --secondary-color: hsl(29, 62%, 78%);
+  /* --main-color: hsl(#008f4c, 100%, 70%); */
+  --main-color: #008f4c;
+  --secondary-color: #17c775;
 }
 
 * {
@@ -16,8 +18,16 @@
   box-sizing: border-box;
 }
 
+#body-login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--secondary-color);
+}
+
 #registro-login {
-  margin-top: 20%;
+  margin-top: 6rem;
   gap: 1rem;
   width: 100%;
   display: flex;
@@ -25,49 +35,56 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding: 2rem 0;
 }
 
 #title-login {
   font-size: 3rem;
-  font-family: var(--texto-general);
+  font-family: var(--texto-montserrat);
   font-weight: 700;
+  width: 100%;
+  text-align: center;
 }
 
-#email-login,
-#password-login {
-  padding: 1rem;
-  border-radius: 10px solid;
-  width: 10rem;
-}
-
-.box-password {
+#box-password {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  gap: 0.3rem;
-  width: 20%;
+  gap: 1rem;
 }
 
-#button-show-password {
-  top: 50%;
-  left: 200%;
-  border-radius: 30px;
-  cursor: pointer;
-  background-color: var(--main-color);
+input {
+  padding: 0.6rem;
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 5px;
+  color: white;
+  font-weight: 800;
 }
 
-#button-show-password:hover {
-  box-shadow: 1px 1px 5px 2px;
+input:hover {
+  box-shadow: 1px 1px 4px 1px black;
 }
+
+input::placeholder {
+  color: white;
+}
+
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+
 
 #button-login {
+  margin-bottom: 2rem;
   padding: 0.4rem;
   font-family: var(--texto-general);
   font-weight: 700;
   cursor: pointer;
   font-size: 1rem;
-  border: none;
+  border: 1px solid white;
   border-radius: 2px;
   box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.335);
   background-color: var(--main-color);
@@ -76,12 +93,4 @@
 #button-login:hover {
   background-color: white;
   box-shadow: 1px 1px 10px 1px rgba(0, 0, 0);
-}
-
-#carrito {
-  box-shadow: 1px 1px 5px 1px grey;
-}
-
-#carrito:hover {
-  box-shadow: 1px 1px 5px 1px grey;
 }

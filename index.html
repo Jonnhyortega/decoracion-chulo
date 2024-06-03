@@ -3,26 +3,41 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/assets/modules/styles.css" />
-    <link rel="stylesheet" href="/assets/modules/querys.css" />
     <link rel="icon" href="/assets/imgs/chulos-terrazos.png" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
+    <link rel="stylesheet" href="/assets/modules/styles.css" />
+    <link rel="stylesheet" href="/assets/modules/querys.css" />
     <link rel="icon" href="/assets/imgs/logo-header.png" />
     <title>Chulo terrazos</title>
   </head>
   <body>
-    <nav id="nav" class="navbar navbar-expand-lg bg-body-tertiary w-100">    
+    <nav
+      id="nav"
+      class="navbar navbar-expand-lg bg-body-tertiary w-100 fixed-top"
+    >
       <div class="container-fluid">
-        <a class="navbar-brand" href="#"><img
-          id="img-header"
-          src="/assets/imgs/logo-header.png"
-          alt="Logo Chulos"
+        <a class="navbar-brand" href="#"
+          ><img
+            id="img-header"
+            src="/assets/imgs/logo-header.png"
+            alt="Logo Chulos"
         /></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
@@ -34,31 +49,34 @@
               <a class="nav-link" href="#section-two">Nosotros</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/assets/modules/registro-new.html">Registrarse</a>
+              <a class="nav-link" href="/assets/modules/registro-new.html"
+                >Registrarse</a
+              >
             </li>
 
             <li class="nav-item">
               <a class="nav-link" href="/assets/modules/login.html">Acceder</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                <i class="fa-solid fa-cart-arrow-down"></i>
-              </a>
-              <ul class="dropdown-menu">
-                <p>Productos</p>
-                  <div id="productos-agregados">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+              <i class="fa-solid fa-cart-arrow-down"></i>
+              <small id="numberProducts"></small>
+            </a>
+              <div class="dropdown-menu">
+                
 
-                    
-
-                    <div id="total-container"></div>
-                </div> 
-              </ul>
+              </div>
             </li>
           </ul>
         </div>
       </div>
     </nav>
-    
 
     <section id="hero">
       <div class="box-hero-left">
@@ -140,27 +158,14 @@
       </form>
     </section>
 
-    <footer class="flex-column-for-querys">
-      <nav id="footer-nav">
-        <ul id="footer-nav-ul">
-          <a href="/index.html"
-            ><img
-              class="container-img"
-              src="/assets/imgs/logo-header.png"
-              alt="Logo Chulos"
-            />
-          </a>
-          <!-- <li><a href="/index.html">Inicio</a></li> -->
-          <li><a href="#productos">Productos</a></li>
-          <li><a href="#background-registroNew">Contactanos</a></li>
-          <li><a href="/assets/registro-new.html">Registrarse</a></li>
-          <li>
-            <a href="/assets/login.html"
-              ><span>Iniciar</span> <span>Sesión</span></a
-            >
-          </li>
-        </ul>
-      </nav>
+    <footer>
+
+      <div class="footer-info">
+        <a href="">Cómo comprar</a>
+        <a href="">Formas de entrega</a>
+        <a href="">Horarios de atencion</a>
+        <a href="">Postventa</a>
+      </div>
 
       <div class="maps">
         <span>Villa Lugano</span>
@@ -195,12 +200,6 @@
         >
       </div>
 
-      <div class="footer-info">
-        <a href="">Cómo comprar</a>
-        <a href="">Formas de entrega</a>
-        <a href="">Horarios de atencion</a>
-        <a href="">Postventa</a>
-      </div>
       <div id="descuento-box" class="text-class-1">
         <div id="keyframe">
           <span class="descuento"
@@ -212,6 +211,5 @@
 
     <script src="/assets/app.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-
   </body>
 </html>
