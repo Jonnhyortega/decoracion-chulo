@@ -557,10 +557,6 @@ body {
 
 #productos h2,
 #background-registroNew h2 {
-  /* EL COLOR DEL SEGUNDO 
-  H2 SE ENCUENTRA
-  CONFIGURADO DESDE 
-  LA HOJA HTML */
   color: black;
   text-align: center;
   font-family: var(--texto-general);
@@ -570,7 +566,6 @@ body {
   padding-bottom: 70px;
   border-bottom: 10px solid var(--main-color);
   transition: 0.7s ease;
-  width: 50%;
 }
 
 #productos h2:hover,
